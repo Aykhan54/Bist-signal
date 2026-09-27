@@ -70,7 +70,8 @@ RSI, MACD ve hacim panellerinin nasıl okunacağını sade anlat (grafik dersi).
 3 ayda bir değiştirir (sonraki: Ocak 2027). Endeksten çıkanları silme, `EK_HISSELER`'e taşı
 (portföy ve sinyal geçmişi kopmasın). Yeni kodları yfinance'ta şirket adıyla doğrula.
 `HALKA_ARZ` (son 12 ayın arzları: işlem başlangıcı + arz fiyatı, kaynak halkarz.com) ayda bir
-güncellenmeli; yfinance BIST bedelsiz/bölünme kaydı tutmuyor, arzdan beri getiri bölünmede yanılır.
+güncellenmeli (güncelleyince `BIST100_GECERLI` / `HALKA_ARZ_GUNCEL` tarihlerini de değiştir: haftalık özet bunlara göre
+🔧 bakım hatırlatması yapar); yfinance BIST bedelsiz/bölünme kaydı tutmuyor, arzdan beri getiri bölünmede yanılır.
 Fon krizinde çöken şişirilmiş hisseler (TERA, SMRTG, GENIL, MIATK) listeden çıkarıldı; kullanıcı
 isteğiyle faiz yüzünden düşen eski büyükler (KONTR vb.) KALDI — tüm çökenleri çıkarma.
 

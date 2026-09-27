@@ -943,6 +943,24 @@ def sektor_dagilimi(pf, by):
     return sorted(((a, v / top * 100) for a, v in pay.items()), key=lambda x: -x[1]) if top else []
 
 
+BIST100_GECERLI = "2026-12-31"   # BIST100 listesinin geçerli olduğu dönemin sonu (Borsa İstanbul 3 ayda bir değiştirir)
+HALKA_ARZ_GUNCEL = "2026-09-26"  # HALKA_ARZ listesinin en son kontrol edildiği gün (ayda bir: halkarz.com)
+
+
+def bakim_notu(simdi):
+    """Haftalık özete: liste bakımının vakti geldiyse kullanıcıya hatırlatma (Claude'a söyleyeceği cümleyle)."""
+    bugun = simdi.strftime("%Y-%m-%d")
+    notlar = []
+    if bugun > BIST100_GECERLI:
+        notlar.append("BIST 100 listesinin dönemi bitti (endeks bileşimi değişti)")
+    if (pd.Timestamp(bugun) - pd.Timestamp(HALKA_ARZ_GUNCEL)).days > 35:
+        notlar.append("halka arz listesi bir aydır kontrol edilmedi")
+    if not notlar:
+        return None
+    return ("🔧 <b>Bakım zamanı:</b> " + "; ".join(notlar) + ". Claude'a \"BIST 100 ve halka arz listelerini güncelle\" "
+            "demen yeterli.")
+
+
 def haftalik_ozet(sonuclar, pf, acik, kapali, simdi):
     """Cuma kapanıştan sonra: haftanın AL'leri, canlı karnenin haftası, portföyün haftalık değişimi."""
     pazartesi = (simdi - pd.Timedelta(days=simdi.weekday())).strftime("%Y-%m-%d")
@@ -973,6 +991,9 @@ def haftalik_ozet(sonuclar, pf, acik, kapali, simdi):
         if satir:
             satir.sort(key=lambda x: -x[1])
             parca.append(f"<b>Portföyün bu hafta</b>: {_tl(top)} · " + ", ".join(f"{k} {_yz(x)}" for k, x in satir))
+    bn = bakim_notu(simdi)
+    if bn:
+        parca.append(bn)
     parca.append(f"<a href=\"{PANO_URL}\">Panoyu aç</a> · <a href=\"{PANO_URL}gecmis.html\">Karne</a>\n"
                  f"<i>Yatırım tavsiyesi değildir.</i>")
     return "\n\n".join(parca)
