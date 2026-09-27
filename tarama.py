@@ -607,7 +607,10 @@ def plan_metni(s, p, girinti="     "):
     if pl["sat"]:
         t.append("ℹ️ Kısa vadeli SAT sinyali — çıkış kuralı iz stop; SAT tek başına \"çık\" demek değil.")
     if pl.get("iz_cikti"):
-        t.append(f"📍 İz stop {pl['iz_cikti']} tarihinde kırıldı — kurala göre çıkış zamanı geçti.")
+        sp = s.get("spark") or {}
+        o_gun = sp.get("c", [None])[sp.get("t", []).index(pl["iz_cikti"])] if pl["iz_cikti"] in sp.get("t", []) else None
+        fark = f" O günkü kapanış {o_gun:g} TL, o günden beri {_yz((pl['fiyat'] / o_gun - 1) * 100)}." if o_gun else ""
+        t.append(f"📍 İz stop {pl['iz_cikti']} tarihinde kırıldı — kurala göre çıkış zamanı geçti.{fark}")
     elif pl.get("stop"):
         if pl.get("iz"):
             t.append(f"📍 İz stop: {pl['stop']} TL (AL'den beri tepe {pl['tepe']} TL'nin %20 altı) — {_yz(pl['stop_uzak'])} aşağıda. "
