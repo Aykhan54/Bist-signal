@@ -214,6 +214,13 @@ değişmedi. Son 30 günde bölünme olan portföy hissesinde 'maliyetini günce
   Olay çalışması (bt/sd1-2.py, 125 hisse 2022-26): sarkmaların %41'i kapanışta geri alındı, %40 tolerans içi, %19 kırıldı;
   kırılım/dönüş/aşım sonrası 20g getiri, aynı trenddeki rastgele günden ±1-2 puan ve dönemden döneme yön değiştiriyor
   (düşük faizde kırılanlar daha İYİ gitti) → mesajlar bilgi, sinyal değil (`SD_NOT`).
+  Ek gün içi olaylar: 🎈/⚠️ `tahta_riski` bugün yeni oluştuysa (dünkü veriyle aynıysa sadece günlük özette), BIST 100
+  ±%2,5 (`PIYASA_SERT`) günde portföyün günlük K/Z satırı. iz_alti metni: v3 pozisyonlarında gün içi iz stop altına ilk
+  sarkmaların %44'ü kapanışta geri alındı; kapanışa bakmak gün içi stop'ta satmaktan ort. +%3 (bt/izgunici.py).
+- Portföy özeti: 🛡️ risk satırı (her pozisyon iz stop / karar çizgisine inerse kayıp, % portföy değeri); 📉 `trend_asagi`
+  (fiyat < SMA200 ve SMA200 20 günde düşmüş) notu. bt/trend1.py (125 hisse + tüm borsa, 5 günde bir örnek): düşük faizde
+  ASAGI'daki hisselerin 60g'de endeksi yenme oranı %24-38 (YUKARI %41-50), medyan −%9…−12; yüksek faizde fark küçük/karışık
+  (tüm borsada ters). Pano portföy tablosunda Destek sütunu (`d.sd.destek`, bugünkü veriyle en yakın destek).
 - Fiyat alarmı: panoda hisse penceresinden kurulur, `ALARMLAR` variable'ına (portföyle aynı anahtar) yazılır;
   her taramada (gün içi de) kontrol, her alarm bir kez çalar. durum.json herkese açık olduğundan sadece
   alarmın sha1 özeti (`alarm_tetik`) saklanır; silinen alarmın kaydı temizlenir.
