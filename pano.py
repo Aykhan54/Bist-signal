@@ -305,7 +305,7 @@ tbody tr:hover,tbody tr:hover td{background:#F2F5F3}
 .pfbox{margin-top:18px}
 .pfbas{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}
 .pfbas h2{margin:0;font-size:16px}.pftop{font-weight:650;font-size:14px}.pftop.pos{color:var(--pos)}.pftop.neg{color:var(--neg)}
-table.pf{min-width:820px}
+table.pf{min-width:900px}
 .pfy.bos{padding:12px 14px;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:12.8px;background:#fff}
 .pfy.bos code{background:#F1F1EE;padding:2px 5px;border-radius:4px;font-size:12px}
 .pfuy{color:var(--sat);font-size:11px;font-weight:600;margin-left:6px}
@@ -942,7 +942,7 @@ function pfRender(){
  var a=pfOku(),liste=document.getElementById('pflist'),top=document.getElementById('pftop');
  if(!a.length){liste.innerHTML='<div class="pfy bos">Henüz hisse yok. <b>+ Ekle</b> ile portföyünü oluştur.</div>';top.textContent='';return;}
  var toplam=0;
- var r='<div class="sar"><table class="pf"><thead><tr><th>Hisse</th><th class="num">Adet</th><th class="num">Maliyet</th><th class="num">Güncel</th><th class="num">K/Z %</th><th class="num">K/Z TL</th><th>Sinyal</th><th class="num">Çıkış (stop)</th><th class="num">Hedef</th><th></th></tr></thead><tbody>';
+ var r='<div class="sar"><table class="pf"><thead><tr><th>Hisse</th><th class="num">Adet</th><th class="num">Maliyet</th><th class="num">Güncel</th><th class="num">K/Z %</th><th class="num">K/Z TL</th><th>Sinyal</th><th class="num" title="Fiyatın altındaki en yakın destek (son 120 günün dibi)">Destek</th><th class="num">Çıkış (stop)</th><th class="num">Hedef</th><th></th></tr></thead><tbody>';
  a.forEach(function(p,i){
   var d=DATA[p.kod]||{},f=d.fiyat;
   var kzy=(f!=null)?((f/p.maliyet-1)*100):null, kzt=(f!=null)?((f-p.maliyet)*p.adet):null;
@@ -956,6 +956,8 @@ function pfRender(){
        (p.xu_birim&&XU?(function(){var xy=(p.xu_birim*XU.c[XU.c.length-1]/(p.adet*p.maliyet)-1)*100;return '<span class="pfxu" title="Aynı parayla '+p.tarih+' tarihinde BIST 100 alsaydın">XU100 '+(xy>=0?'+':'')+xy.toFixed(1)+'%</span>';})():'')+'</td>'+
      '<td class="num '+kzc+'">'+(kzt!=null?((kzt>=0?'+':'')+Math.round(kzt).toLocaleString('tr-TR')+' TL'):'—')+'</td>'+
      '<td><span class="pill '+scls+'">'+sn+'</span>'+uy+''+'</td>'+
+     (function(){var ds=d.sd&&d.sd.destek;if(f==null||!ds)return '<td class="num">—</td>';var u=(ds.fiyat/f-1)*100;
+       return '<td class="num" title="'+ds.tarih+' dibi'+(ds.test>=2?', '+ds.test+' kez test edildi':'')+'">'+(u>-2?'👉 ':'')+ds.fiyat+' <span class="sgun">'+yzd(u)+'</span></td>';})()+
      (function(){if(f==null)return '<td class="num">—</td><td class="num">—</td>';var pl=pozPlan(d,p),h=pl.hedefler.length?pl.hedefler[0][0]:null;
        if(pl.uzun)return '<td class="num stop">'+(pl.karar?(pl.kararAsildi?'<b>🧭 '+pl.karar+' ⚠</b>':'🧭 '+pl.karar+' <span class="sgun">'+yzd(pl.kararUzak)+'</span>'):'—')+'</td>'+
               '<td class="num pos">'+(h?h+' <span class="sgun">'+yzd((h/f-1)*100)+'</span>':'—')+'</td>';
