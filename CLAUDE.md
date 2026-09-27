@@ -49,8 +49,9 @@ tarih/fiyat), TradingView'i sadece "tam ekran aç" butonu olarak bırak.
 ## BEKLEYEN İŞLER (öncelik sırası)
 1. **Grafik:** YAPILDI (eksenler, 6 ay, AL/SAT dönüş işaretleri, fare/dokunma ile değer). Eski not: kendi SVG grafiğini büyüt, fiyat/tarih
    eksen değerleri ekle, daha uzun geçmiş + hover tooltip. "Tam ekran aç" butonu kalsın.
-2. **Hacim/likidite filtresi:** düşük hacimli/az işlem gören hisseleri ele veya işaretle
-   (yanıltıcı sinyalleri azaltır).
+2. **Hacim/likidite filtresi:** TEST EDİLDİ, GEREKMİYOR (2026-09-28, bt/likidite1.py: 586 hisse, 2022-26, ~2.000 v3
+   işlemi; 60g medyan TL hacmine göre borsa içi sıra ya da nominal eşikte düşük likiditeli AL'ler kötü değil, farklar
+   birkaç uç işlemden; en iyi 10 hariç gruplar benzer). Liste zaten <50 mn TL küçükleri almıyor.
 3. **Destek/direnç + DİP mantığı:** YAPILDI (`sinyal.destek_direnc`): son 120 günün
    dip/tepelerinden "Destekten tepki" ve "Dirence yaklaşıyor" etiketleri, modalda seviye +
    tarih açıklaması. Eski RSI/Bollinger DİP etiketi kaldırıldı. Eksik kalan: düşen trend
@@ -203,6 +204,16 @@ değişmedi. Son 30 günde bölünme olan portföy hissesinde 'maliyetini günce
 - ⭐ Favoriler: istemci tarafı (`favoriler_v1` localStorage + `FAVORILER` variable, portföyle aynı anahtar). `tabloDuzen()`
   favorileri üste alır (sunucu sırası AL→NÖTR→SAT korunur), sütun sıralamasında da üstte tutar; arama kutusu + 'sadece
   favoriler'. Satırlarda `data-kod`; ilk sütun ⭐. AL+ işareti ★ yerine 'AL+' yazısı (favori yıldızıyla karışmasın).
+- 📍 Portföy gün içi (`tarama.gunici_olaylar`, 10:15-18:10 hafta içi): destek/direnç DÜNKÜ kapanışa kadarki veriyle
+  (`sd_dun`; bugün yeniden hesaplanan destek kırılınca alttaki dibe kayar), olaylar d_yakin/d_sarkti/d_kirildi (karar
+  çizgisi = S·(1−tol)), r_kirdi/r_dondu, iz_yakin (%2)/iz_alti, taban/tavan (±%9,5)/sert (−%5). Olay+seviye günde bir kez
+  (`durum.gunici`, gizli anahtar); ağır olay hafifleri bastırır. Veri teyidi: olay `_son_fiyat` (fast_info) ile de tutmalı,
+  iki fiyat >%1 farklıysa atlanır (THYAO 24.09 Yahoo günlük 288,5 / resmi 289,5, destek 289,25 → yanlış 'kırıldı' görünmüştü).
+  Son bar bugünün değilse (hisse henüz işlem görmedi) olay yok. Kesin kapanışta `kapanis_sd` sonuç mesajı (`sd_kapanis`;
+  uzun vadede kırılım karar çizgisi mesajına bırakılır). ☀️ Sabah (`seviye_satiri`, günün ilk taraması <12:00, `sabah_tarih`).
+  Olay çalışması (bt/sd1-2.py, 125 hisse 2022-26): sarkmaların %41'i kapanışta geri alındı, %40 tolerans içi, %19 kırıldı;
+  kırılım/dönüş/aşım sonrası 20g getiri, aynı trenddeki rastgele günden ±1-2 puan ve dönemden döneme yön değiştiriyor
+  (düşük faizde kırılanlar daha İYİ gitti) → mesajlar bilgi, sinyal değil (`SD_NOT`).
 - Fiyat alarmı: panoda hisse penceresinden kurulur, `ALARMLAR` variable'ına (portföyle aynı anahtar) yazılır;
   her taramada (gün içi de) kontrol, her alarm bir kez çalar. durum.json herkese açık olduğundan sadece
   alarmın sha1 özeti (`alarm_tetik`) saklanır; silinen alarmın kaydı temizlenir.
