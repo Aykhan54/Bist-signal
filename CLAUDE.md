@@ -209,8 +209,10 @@ değişmedi. Son 30 günde bölünme olan portföy hissesinde 'maliyetini günce
   çizgisi = S·(1−tol)), r_kirdi/r_dondu, iz_yakin (%2)/iz_alti, taban/tavan (±%9,5)/sert (−%5). Olay+seviye günde bir kez
   (`durum.gunici`, gizli anahtar); ağır olay hafifleri bastırır. Veri teyidi: olay `_son_fiyat` (fast_info) ile de tutmalı,
   iki fiyat >%1 farklıysa atlanır (THYAO 24.09 Yahoo günlük 288,5 / resmi 289,5, destek 289,25 → yanlış 'kırıldı' görünmüştü).
-  Son bar bugünün değilse (hisse henüz işlem görmedi) olay yok. Kesin kapanışta `kapanis_sd` sonuç mesajı (`sd_kapanis`;
-  uzun vadede kırılım karar çizgisi mesajına bırakılır). ☀️ Sabah (`seviye_satiri`, günün ilk taraması <12:00, `sabah_tarih`).
+  Son bar bugünün değilse (hisse henüz işlem görmedi) olay yok. Kesin kapanışta `kapanis_sd` sonucu günlük portföy özetinin
+  başında (ayrı mesaj değil; uzun vadede kırılım karar çizgisi mesajına bırakılır). `GUNICI_OLAYLAR`: d_sarkti/d_yakin
+  kapalı (gürültü); r_dondu gün içi tepe dirence DEĞMELİ (bölge kenarı değil). bt/mesajsay*.py: 5 hisselik portföyde
+  mesaj gelen gün %82 → %41. ☀️ Sabah (`seviye_satiri`, günün ilk taraması <12:00, `sabah_tarih`).
   Olay çalışması (bt/sd1-2.py, 125 hisse 2022-26): sarkmaların %41'i kapanışta geri alındı, %40 tolerans içi, %19 kırıldı;
   kırılım/dönüş/aşım sonrası 20g getiri, aynı trenddeki rastgele günden ±1-2 puan ve dönemden döneme yön değiştiriyor
   (düşük faizde kırılanlar daha İYİ gitti) → mesajlar bilgi, sinyal değil (`SD_NOT`).
