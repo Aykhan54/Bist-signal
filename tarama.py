@@ -636,13 +636,23 @@ SD_NOT = ("Geçmiş testte (2022-26) gün içi desteğin altına sarkmaların ~%
           "dirençten dönüş sonrası 20 gün rastgele bir günden belirgin farklı değildi. Bunlar bilgi; çıkış kuralı iz stop / karar çizgisi.")
 
 
-def sd_dun(df):
+def _bugun_tarih():
+    return pd.Timestamp.now(tz="Europe/Istanbul").date()
+
+
+def sd_dun(df, bugun_bari=True):
     """Portföy mesajları için destek/direnç DÜNKÜ kapanışa kadarki veriyle: fiyat desteği kırınca yeniden hesaplanan
-    destek bir alttaki dibe kayar, kırılım görünmez olur (karar çizgisiyle aynı mantık). Bugünün barı da döner."""
+    destek bir alttaki dibe kayar, kırılım görünmez olur (karar çizgisiyle aynı mantık). bugun_bari=True: son bar
+    bugünün olmalı (yoksa hisse bugün henüz işlem görmedi → None; dünün olayları tekrar 'bugün' sayılmasın).
+    bugun_bari=False (sabah): bugünden önceki son kapanışa kadarki veri. Bugünden önceki barlarla birlikte döner."""
     d = bolunme_duzelt(df)
-    if len(d) < 30:
+    son_bugun = d.index[-1].date() == _bugun_tarih() if len(d) else False
+    if bugun_bari and not son_bugun:
         return None, None
-    return destek_direnc(d.iloc[:-1]), d
+    gecmis = d.iloc[:-1] if son_bugun else d
+    if len(gecmis) < 30:
+        return None, None
+    return destek_direnc(gecmis), d
 
 
 def gunici_olaylar(s, df, pozisyon, fiyat=None):
@@ -698,6 +708,43 @@ def gunici_mesaj(satirlar):
     govde = "\n\n".join(f"<b>{k}</b> {f} TL\n     " + "\n     ".join(m) for k, f, m in satirlar)
     return (f"📍 <b>Portföy — gün içi</b> <i>(~15 dk gecikmeli)</i>\n\n{govde}\n\n"
             f"<i>Kapanışta sonuç mesajı gelir. {SD_NOT} Yatırım tavsiyesi değildir.</i>\n<a href=\"{PANO_URL}\">Panoyu aç</a>")
+
+
+def seviye_satiri(kod, s, df, pozisyon):
+    """☀️ Sabah mesajı için bir portföy hissesinin izleme seviyeleri (dünkü kapanışa göre)."""
+    sd, d = sd_dun(df, bugun_bari=False)
+    if d is None:
+        return None
+    gecmis = d[[x.date() < _bugun_tarih() for x in d.index]]
+    if gecmis.empty:
+        return None
+    c = float(gecmis["Close"].iloc[-1])
+    uz = lambda x: _yz((x / c - 1) * 100)
+    parca, yakin = [], False
+    if sd and sd.get("destek"):
+        S = sd["destek"]["fiyat"]
+        karar = round(S * (1 - sd["tol"] / 100), 2)
+        parca.append(f"destek {S} ({uz(S)}) · karar çizgisi {karar}")
+        yakin |= S / c - 1 > -0.02
+    else:
+        parca.append("altında yakın destek yok")
+    if sd and sd.get("direnc"):
+        R = sd["direnc"]["fiyat"]
+        parca.append(f"direnç {R} ({uz(R)})")
+        yakin |= R / c - 1 < 0.02
+    iz = s.get("iz") or {}
+    if not pozisyon.get("uzun") and iz.get("stop") and not iz.get("cikti"):
+        parca.append(f"iz stop {iz['stop']} ({uz(iz['stop'])})")
+        yakin |= iz["stop"] / c - 1 > -0.03
+    elif not pozisyon.get("uzun") and iz.get("cikti"):
+        parca.append(f"iz stop {iz['cikis_tarih']} tarihinde kırıldı")
+    return f"{'👉 ' if yakin else ''}<b>{kod}</b> {c:g} TL" + (" · uzun vade" if pozisyon.get("uzun") else "") + "\n     " + " · ".join(parca)
+
+
+def sabah_mesaji(satirlar):
+    return ("☀️ <b>Portföy — günün seviyeleri</b> <i>(dünkü kapanışa göre)</i>\n\n" + "\n\n".join(satirlar) +
+            "\n\n<i>👉 = fiyat bir seviyeye %2-3'ten yakın. Gün içinde destek/direnç/iz stop'a gelirse mesaj gelir; "
+            "karar kapanışa göre. Yatırım tavsiyesi değildir.</i>")
 
 
 def kapanis_sd(s, df, pozisyon):
@@ -1258,6 +1305,22 @@ def main():
             for a, _ in alarm_yeni:
                 tetiklenen.discard(_alarm_anahtar(a))   # gönderilemediyse sonraki taramada yeniden dene
 
+    # ☀️ Sabah: günün seviyeleri (günün ilk taraması, en geç 12:00; günde bir kez)
+    sabah_tarih = durum.get("sabah_tarih")
+    if pf and simdi.weekday() < 5 and dakika < 12 * 60 and sabah_tarih != bugun_iso:
+        satirlar = []
+        for kod in sorted(pf):
+            try:
+                df = data[kod + ".IS"].dropna(subset=["Close"])
+                m = seviye_satiri(kod, by_kod[kod], df, pf[kod]) if kod in by_kod and not df.empty else None
+            except Exception:
+                m = None
+            if m:
+                satirlar.append(m)
+        if not satirlar or tg_gonder(sabah_mesaji(satirlar)):
+            sabah_tarih = bugun_iso
+            if satirlar:
+                print("Telegram: sabah seviyeleri.")
     # 📍 Portföy gün içi: destek/direnç, iz stop, taban/tavan (hafta içi 10:15-18:10). Her olay günde bir kez; anahtarlar
     # gizli özetle (durum.json herkese açık). Veri koruması: olay Yahoo'nun anlık fiyatıyla da tutmalı (tek kaynaktaki
     # hatalı fiyat yanlış "destek kırıldı" demesin); iki fiyat %1'den fazla farklıysa o hisse bu taramada atlanır.
@@ -1347,7 +1410,8 @@ def main():
                    "alarm_tetik": sorted(tetiklenen), "on_sinyal": dict(sorted(on_sinyal.items())),
                    "uv_son": dict(sorted(uv_son.items())), "kap_son": kap_son,
                    "tk_gonderilen": {"tarih": bugun_iso, "kodlar": sorted(tk_gonderilen)}, "mom_ay": mom,
-                   "gunici": {"tarih": bugun_iso, "g": sorted(gi_gonderilen)}, "sd_kapanis": sd_kap},
+                   "gunici": {"tarih": bugun_iso, "g": sorted(gi_gonderilen)}, "sd_kapanis": sd_kap,
+                   "sabah_tarih": sabah_tarih},
                   f, ensure_ascii=False, indent=2)
 
 
