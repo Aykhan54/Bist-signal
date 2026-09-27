@@ -622,6 +622,114 @@ def plan_metni(s, p, girinti="     "):
     return ("\n" + girinti).join(t)
 
 
+# 📍 Portföy gün içi mesajları (destek/direnç, iz stop, taban/tavan). Yahoo ~15 dk gecikmeli: 10:00 açılış ~10:15'te gelir.
+GUNICI_BAS = 10 * 60 + 15
+GUNICI_SON = 18 * 60 + 10       # sürekli işlem 18:00'de biter; sonrası kapanış teyidi (KAPANIS_DAKIKA)
+GUNICI_VERI_FARK = 0.01         # tablodaki fiyat ile anlık fiyat bundan fazla farklıysa veri şüpheli: o hisse için mesaj yok
+IZ_YAKIN = 0.02                 # iz stop'a bu kadar yaklaşınca gün içi uyarı
+SERT_DUSUS, TABAN_ESIK, TAVAN_ESIK = -0.05, -0.095, 0.095
+# Olay çalışması (2022-26, 125 hisse, seviyeler bir önceki kapanışa göre; scratchpad bt/sd1-2.py): gün içi desteğin
+# altına sarkmaların ~%41'i kapanışta geri alındı, ~%40'ı desteğin hafif altında (tolerans içinde) kapadı, ~%19'u
+# kırıldı. Kırılım / dönüş sonrası 20 gün, aynı trenddeki rastgele günden en fazla ±1-2 puan farklı ve yönü faiz
+# dönemine göre değişiyor → destek/direnç mesajları BİLGİ; çıkış kuralı iz stop / karar çizgisi (test edilen).
+SD_NOT = ("Geçmiş testte (2022-26) gün içi desteğin altına sarkmaların ~%40'ı kapanışta geri alındı; destek kırılımı ya da "
+          "dirençten dönüş sonrası 20 gün rastgele bir günden belirgin farklı değildi. Bunlar bilgi; çıkış kuralı iz stop / karar çizgisi.")
+
+
+def sd_dun(df):
+    """Portföy mesajları için destek/direnç DÜNKÜ kapanışa kadarki veriyle: fiyat desteği kırınca yeniden hesaplanan
+    destek bir alttaki dibe kayar, kırılım görünmez olur (karar çizgisiyle aynı mantık). Bugünün barı da döner."""
+    d = bolunme_duzelt(df)
+    if len(d) < 30:
+        return None, None
+    return destek_direnc(d.iloc[:-1]), d
+
+
+def gunici_olaylar(s, df, pozisyon, fiyat=None):
+    """Portföydeki bir hisse için o anki fiyatla olaylar: [(olay, seviye, bastırdığı hafif olaylar, metin)].
+    fiyat: kontrol edilecek fiyat (varsayılan tablodaki son fiyat). Her olay+seviye günde bir kez gönderilir."""
+    sd, d = sd_dun(df)
+    if d is None:
+        return []
+    f = float(fiyat if fiyat is not None else s["fiyat"])
+    dun = float(d["Close"].iloc[-2])
+    hi = max(float(d["High"].iloc[-1]) if pd.notna(d["High"].iloc[-1]) else f, f)
+    out = []
+    ch = f / dun - 1
+    if ch <= TABAN_ESIK:
+        out.append(("taban", 0, ("sert",), f"🟥 tabanda / tabana yakın: bugün {_yz(ch * 100)}"))
+    elif ch >= TAVAN_ESIK:
+        out.append(("tavan", 0, (), f"🟩 tavanda / tavana yakın: bugün {_yz(ch * 100)}"))
+    elif ch <= SERT_DUSUS:
+        out.append(("sert", 0, (), f"📉 sert düşüş: bugün {_yz(ch * 100)}"))
+    iz = s.get("iz") or {}
+    if not pozisyon.get("uzun") and iz.get("stop") and not iz.get("cikti"):
+        st = iz["stop"]
+        if f < st:
+            out.append(("iz_alti", st, ("iz_yakin",), f"⛔ <b>iz stop'un ({st} TL) altında.</b> Kural kapanışa bakar: kapanış da altında "
+                                                       f"kalırsa çıkış zamanı (17:30-18:00 arası karar verebilirsin)."))
+        elif f <= st * (1 + IZ_YAKIN):
+            out.append(("iz_yakin", st, (), f"⚠️ iz stop'a yakın: {st} TL, {_yz((st / f - 1) * 100)} aşağıda. Kapanış bunun altında olursa çıkış."))
+    if sd and sd.get("destek"):
+        ds, tol = sd["destek"], sd["tol"] / 100
+        S = ds["fiyat"]
+        karar = round(S * (1 - tol), 2)
+        tanim = f"destek {S} TL ({tarih_tr(ds['tarih'])} dibi" + (f", {ds['test']} kez test edildi)" if ds["test"] >= 2 else ")")
+        if f < karar:
+            out.append(("d_kirildi", S, ("d_sarkti", "d_yakin"), f"🔻 <b>desteği kırdı</b> (gün içi): {tanim}, karar çizgisi {karar} TL. "
+                                                                 f"Kapanış {karar} TL altında kalırsa kırılım teyit olur."))
+        elif f < S:
+            out.append(("d_sarkti", S, ("d_yakin",), f"↘️ desteğin altına sarktı (gün içi): {tanim}. Karar çizgisi {karar} TL; kapanış belirleyici."))
+        elif f <= S * (1 + tol) and dun > S * (1 + tol):
+            out.append(("d_yakin", S, (), f"🔹 desteğe geldi: {tanim}, {_yz((S / f - 1) * 100)} aşağıda."))
+    if sd and sd.get("direnc"):
+        dr, tol = sd["direnc"], sd["tol"] / 100
+        R = dr["fiyat"]
+        tanim = f"direnç {R} TL ({tarih_tr(dr['tarih'])} tepesi)"
+        if f > R * (1 + tol):
+            out.append(("r_kirdi", R, ("r_dondu",), f"🔺 <b>direnci aştı</b> (gün içi): {tanim}. Kapanışta da üstünde kalırsa kırılım teyit olur."))
+        elif hi >= R * (1 - tol) and f < R * (1 - tol) and dun < R * (1 - tol):
+            out.append(("r_dondu", R, (), f"↩️ dirence dayanıp geri döndü: {tanim}, bugünkü tepe {round(hi, 2)} TL."))
+    return out
+
+
+def gunici_mesaj(satirlar):
+    """satirlar: [(kod, fiyat, [metin, ...]), ...]"""
+    govde = "\n\n".join(f"<b>{k}</b> {f} TL\n     " + "\n     ".join(m) for k, f, m in satirlar)
+    return (f"📍 <b>Portföy — gün içi</b> <i>(~15 dk gecikmeli)</i>\n\n{govde}\n\n"
+            f"<i>Kapanışta sonuç mesajı gelir. {SD_NOT} Yatırım tavsiyesi değildir.</i>\n<a href=\"{PANO_URL}\">Panoyu aç</a>")
+
+
+def kapanis_sd(s, df, pozisyon):
+    """Kesin kapanış sonrası: bugün destek/direnç bölgesine değen portföy hissesi için sonuç satırları."""
+    sd, d = sd_dun(df)
+    if d is None or not sd:
+        return []
+    c = float(d["Close"].iloc[-1])
+    lo = min(float(d["Low"].iloc[-1]) if pd.notna(d["Low"].iloc[-1]) else c, c)
+    hi = max(float(d["High"].iloc[-1]) if pd.notna(d["High"].iloc[-1]) else c, c)
+    tol, out = sd["tol"] / 100, []
+    if sd.get("destek") and lo < sd["destek"]["fiyat"]:
+        S = sd["destek"]["fiyat"]
+        karar = round(S * (1 - tol), 2)
+        if c >= S:
+            out.append(f"✅ gün içi desteğin ({S} TL) altına sarktı, <b>kapanışta geri aldı</b> (gün dibi {round(lo, 2)} TL).")
+        elif c >= karar:
+            out.append(f"↔️ desteğin ({S} TL) hafif altında kapadı ama karar çizgisinin ({karar} TL) üstünde: kırılım sayılmaz, yarın izle.")
+        elif not pozisyon.get("uzun"):   # uzun vadede bu durum karar çizgisi mesajıyla ayrıca bildirilir
+            out.append(f"🔻 <b>destek ({S} TL) kapanışta kırıldı</b> (karar çizgisi {karar} TL). Sistemin çıkış kuralı iz stop; "
+                       f"kırılım tek başına sat sinyali değil ama pozisyonu gözden geçirme noktası.")
+    if sd.get("direnc") and hi >= sd["direnc"]["fiyat"] * (1 - tol):
+        R = sd["direnc"]["fiyat"]
+        if c > R * (1 + tol):
+            out.append(f"🔺 <b>direnç ({R} TL) kapanışta aşıldı</b>: eski tepe artık destek olabilir.")
+        elif c < R * (1 - tol):
+            out.append(f"↩️ dirençten ({R} TL) döndü: gün içi {round(hi, 2)} TL'yi gördü, {c:g} TL'den kapadı.")
+        else:
+            out.append(f"🧱 direnç ({R} TL) bölgesinde kapadı: ne aştı ne döndü.")
+    return out
+
+
 MAX_AL_SATIR = 20  # Telegram mesajı 4096 karakterle sınırlı
 
 
@@ -1150,6 +1258,62 @@ def main():
             for a, _ in alarm_yeni:
                 tetiklenen.discard(_alarm_anahtar(a))   # gönderilemediyse sonraki taramada yeniden dene
 
+    # 📍 Portföy gün içi: destek/direnç, iz stop, taban/tavan (hafta içi 10:15-18:10). Her olay günde bir kez; anahtarlar
+    # gizli özetle (durum.json herkese açık). Veri koruması: olay Yahoo'nun anlık fiyatıyla da tutmalı (tek kaynaktaki
+    # hatalı fiyat yanlış "destek kırıldı" demesin); iki fiyat %1'den fazla farklıysa o hisse bu taramada atlanır.
+    gi_d = durum.get("gunici") or {}
+    gi_gonderilen = set(gi_d.get("g", [])) if gi_d.get("tarih") == bugun_iso else set()
+    if pf and simdi.weekday() < 5 and GUNICI_BAS <= dakika < GUNICI_SON:
+        satirlar, yeni_anahtar, supheli = [], set(), 0
+        for kod in sorted(pf):
+            s = by_kod.get(kod)
+            try:
+                df = data[kod + ".IS"].dropna(subset=["Close"])
+            except Exception:
+                continue
+            if not s or df.empty:
+                continue
+            anahtar = lambda o, sv, kod=kod: _gizli(f"gi|{kod}|{o}|{sv}")
+            aday = [x for x in gunici_olaylar(s, df, pf[kod]) if anahtar(x[0], x[1]) not in gi_gonderilen]
+            if not aday:
+                continue
+            anlik = _son_fiyat(kod + ".IS")
+            if not anlik or abs(anlik / s["fiyat"] - 1) > GUNICI_VERI_FARK:
+                supheli += 1
+                continue
+            teyit = {(x[0], x[1]) for x in gunici_olaylar(s, df, pf[kod], fiyat=anlik)}
+            aday = [x for x in aday if (x[0], x[1]) in teyit]
+            metin = []
+            for o, sv, bastir, m in aday:
+                yeni_anahtar.add(anahtar(o, sv))
+                yeni_anahtar |= {anahtar(b, sv) for b in bastir}
+                metin.append(m)
+            if metin:
+                satirlar.append((kod, round(anlik, 2), metin))
+        if supheli:
+            print(f"Gün içi portföy: {supheli} hissede fiyat kaynakları tutarsız, bu taramada atlandı.")
+        if satirlar:
+            print(f"Telegram: portföy gün içi ({len(satirlar)} hisse).")
+            if tg_gonder(gunici_mesaj(satirlar)):
+                gi_gonderilen |= yeni_anahtar
+    # Kesin kapanış: bugün destek/direnç bölgesine değen portföy hisselerinde sonuç (günde bir kez)
+    sd_kap = durum.get("sd_kapanis")
+    if pf and simdi.weekday() < 5 and kapanis_zamani and sd_kap != bugun_iso:
+        satirlar = []
+        for kod in sorted(pf):
+            try:
+                df = data[kod + ".IS"].dropna(subset=["Close"])
+                m = kapanis_sd(by_kod[kod], df, pf[kod]) if kod in by_kod and not df.empty else []
+            except Exception:
+                m = []
+            if m:
+                satirlar.append(f"<b>{kod}</b> {by_kod[kod]['fiyat']} TL\n     " + "\n     ".join(m))
+        if not satirlar or tg_gonder("📍 <b>Portföy — kapanış: destek/direnç</b>\n\n" + "\n\n".join(satirlar) +
+                                     f"\n\n<i>{SD_NOT}</i>\n<a href=\"{PANO_URL}\">Panoyu aç</a>"):
+            sd_kap = bugun_iso
+            if satirlar:
+                print(f"Telegram: kapanış destek/direnç ({len(satirlar)} hisse).")
+
     # KAP: portföy hisselerinin yeni bildirimleri (her taramada). kap_son = görülen en büyük bildirim no (genel sayaç,
     # portföy bilgisi içermez); ilk çalışmada sessizce başlangıç kaydı.
     kap_son = durum.get("kap_son") or 0
@@ -1182,7 +1346,8 @@ def main():
                    "karar_kirilim_g": sorted(kirilim),
                    "alarm_tetik": sorted(tetiklenen), "on_sinyal": dict(sorted(on_sinyal.items())),
                    "uv_son": dict(sorted(uv_son.items())), "kap_son": kap_son,
-                   "tk_gonderilen": {"tarih": bugun_iso, "kodlar": sorted(tk_gonderilen)}, "mom_ay": mom},
+                   "tk_gonderilen": {"tarih": bugun_iso, "kodlar": sorted(tk_gonderilen)}, "mom_ay": mom,
+                   "gunici": {"tarih": bugun_iso, "g": sorted(gi_gonderilen)}, "sd_kapanis": sd_kap},
                   f, ensure_ascii=False, indent=2)
 
 
