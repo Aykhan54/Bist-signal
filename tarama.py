@@ -985,6 +985,9 @@ def portfoy_ozeti(sonuclar, pf, piyasa=None, endeks=None):
             sn += " · uzun vade"
         if s.get("direnc_yakin"):
             notlar.append("⚠️ dirence yaklaşıyor")
+        if s.get("trend_asagi"):
+            notlar.append("📉 trend aşağı (fiyat düşen 200 günlük ortalamanın altında): geçmişte bu durumdakiler sonraki 3 ayda "
+                          "çoğunlukla endeksin gerisinde kaldı (özellikle düşük faiz döneminde)")
         if s.get("patlak"):
             notlar.append(f"⚠️ taban serisi ({s['taban15']} kez/15 gün)")
         th = s.get("tahta") or {}
@@ -1006,6 +1009,23 @@ def portfoy_ozeti(sonuclar, pf, piyasa=None, endeks=None):
                      + "\n     " + plan_metni(s, p)
                      + (f"\n     📊 {bilanco_metni(b)}" if b and bilanco_metni(b) else ""))
     parca.insert(1, f"Toplam K/Z: <b>{_tl(toplam)}</b>")
+    # 🛡️ Risk: her pozisyon kendi çıkış seviyesine (iz stop; uzun vadede karar çizgisi) inerse bugünkü değerden kayıp
+    deger = risk = 0.0
+    kapsam = 0
+    for kod, p in pf.items():
+        s = by.get(kod)
+        if not s:
+            continue
+        deger += s["fiyat"] * p["adet"]
+        pl = pozisyon_plani(s, p)
+        cikis = pl.get("karar") if pl["uzun"] else pl.get("stop")
+        if cikis and cikis < s["fiyat"]:
+            risk += (cikis - s["fiyat"]) * p["adet"]
+            kapsam += 1
+    if kapsam and deger:
+        parca.insert(2, f"🛡️ Her pozisyon çıkış seviyesine (iz stop / karar çizgisi) inerse: <b>{_tl(risk)}</b> "
+                        f"(bugünkü portföy değerine göre %{abs(risk) / deger * 100:.1f}" +
+                        (f"; {len(pf) - kapsam} hissede seviye yok ya da zaten aşıldı)" if kapsam < len(pf) else ")"))
     kiyas = endeks_kiyas(pf, by, endeks)
     if kiyas:
         kapsam = "" if kiyas["n"] == kiyas["toplam_n"] else f" (alış tarihi girilen {kiyas['n']}/{kiyas['toplam_n']} hisse)"

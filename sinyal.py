@@ -607,6 +607,9 @@ def analiz_et(df, xu_ust=None):
     oynak = bool(not pd.isna(vol60) and vol60 > OYNAK_ESIK)
     s200 = d["SMA200"]
     trend = bool(len(d) > 220 and not pd.isna(s200.iloc[-1]) and fiyat > s200.iloc[-1] and s200.iloc[-1] > s200.iloc[-21])
+    # düşen trend: fiyat düşen SMA200'ün altında (portföy notu; bt/trend1.py: düşük faizde bu durumdakilerin ~%62-76'sı
+    # sonraki 60 günde endeksin gerisinde kaldı, yükselen trendde ~%50; yüksek faizde fark küçük)
+    trend_asagi = bool(len(d) > 220 and not pd.isna(s200.iloc[-21]) and fiyat < s200.iloc[-1] and s200.iloc[-1] < s200.iloc[-21])
     al_tarih = str(d.index[al_bas].date()) if al_bas is not None else None
 
     # hacim teyidi: AL'e dönüş günü hacmi önceki 20 günün ortalamasının HACIM_ESIK katından fazla mı
@@ -656,6 +659,7 @@ def analiz_et(df, xu_ust=None):
         "oynak": oynak,
         "vol60": None if pd.isna(vol60) else round(float(vol60) * 100, 1),
         "trend": trend,
+        "trend_asagi": trend_asagi,
         "v2_uygun": bool(trend and not oynak),   # v2 giriş filtresi (piyasa filtresi taramada)
         "al_tarih": al_tarih,
         "hacim_kat": hacim_kat,
