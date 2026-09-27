@@ -633,6 +633,9 @@ PIYASA_SERT = 0.025             # BIST 100 gün içinde bu kadar (±) oynarsa po
 # altına sarkmaların ~%41'i kapanışta geri alındı, ~%40'ı desteğin hafif altında (tolerans içinde) kapadı, ~%19'u
 # kırıldı. Kırılım / dönüş sonrası 20 gün, aynı trenddeki rastgele günden en fazla ±1-2 puan farklı ve yönü faiz
 # dönemine göre değişiyor → destek/direnç mesajları BİLGİ; çıkış kuralı iz stop / karar çizgisi (test edilen).
+# v3 pozisyonları (bt/izgunici.py, 125 hisse): gün içi iz stop altına ilk sarkmaların %44'ü (düşük faiz %47, yüksek %43)
+# kapanışta geri alındı; kapanışa bakan kural, sarkma anında stop'tan satmaya göre ort. +%3 (medyan hafif eksi, birkaç büyük
+# kazanç taşıyor) → iz_alti mesajı "kapanışı bekle" der.
 SD_NOT = ("Geçmiş testte (2022-26) gün içi desteğin altına sarkmaların ~%40'ı kapanışta geri alındı; destek kırılımı ya da "
           "dirençten dönüş sonrası 20 gün rastgele bir günden belirgin farklı değildi. Bunlar bilgi; çıkış kuralı iz stop / karar çizgisi.")
 
@@ -686,7 +689,8 @@ def gunici_olaylar(s, df, pozisyon, fiyat=None):
         st = iz["stop"]
         if f < st:
             out.append(("iz_alti", st, ("iz_yakin",), f"⛔ <b>iz stop'un ({st} TL) altında.</b> Kural kapanışa bakar: kapanış da altında "
-                                                       f"kalırsa çıkış zamanı (17:30-18:00 arası karar verebilirsin)."))
+                                                       f"kalırsa çıkış zamanı (17:30-18:00 arası karar verebilirsin). Geçmişte gün içi iz stop altına inenlerin ~%44'ü "
+                                                       f"kapanışta geri aldı; kapanışı beklemek ortalamada gün içinde satmaktan iyiydi."))
         elif f <= st * (1 + IZ_YAKIN):
             out.append(("iz_yakin", st, (), f"⚠️ iz stop'a yakın: {st} TL, {_yz((st / f - 1) * 100)} aşağıda. Kapanış bunun altında olursa çıkış."))
     if sd and sd.get("destek"):
