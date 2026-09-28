@@ -167,10 +167,15 @@
   "alarm_tetik": [],
   "on_sinyal": {},
   "uv_son": {},
-  "kap_son": 1668413,
+  "kap_son": 1668423,
   "tk_gonderilen": {
     "tarih": "2026-09-28",
     "kodlar": []
   },
-  "mom_ay": {}
+  "mom_ay": {},
+  "gunici": {
+    "tarih": "2026-09-28",
+    "g": []
+  },
+  "sabah_tarih": "2026-09-28"
 }
