@@ -23,7 +23,7 @@
     "AKBNK": "SAT",
     "AKCNS": "SAT",
     "AKENR": "SAT",
-    "AKFIS": "NÖTR",
+    "AKFIS": "SAT",
     "AKFYE": "SAT",
     "AKGRT": "SAT",
     "AKHAN": "SAT",
@@ -326,6 +326,11 @@
   "karar_kirilim_g": [],
   "alarm_tetik": [],
   "on_sinyal": {
+    "AKFIS": {
+      "sinyal": "SAT",
+      "onceki": "NÖTR",
+      "tarih": "2026-09-28"
+    },
     "AKSA": {
       "sinyal": "SAT",
       "onceki": "NÖTR",
@@ -388,7 +393,7 @@
     }
   },
   "uv_son": {},
-  "kap_son": 1669021,
+  "kap_son": 1669086,
   "tk_gonderilen": {
     "tarih": "2026-09-28",
     "kodlar": []
