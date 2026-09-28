@@ -6,6 +6,7 @@
     "HRKET",
     "HUNER",
     "ISDMR",
+    "KRDMD",
     "TKFEN",
     "TUKAS"
   ],
@@ -174,12 +175,15 @@
   "gunici": {
     "tarih": "2026-09-28",
     "g": [
+      "0f9c2d043977c83d",
       "36f3b3a801b7aa46",
       "6208d9d28d82784e",
       "83e80ff656021b31",
       "9b02010e56d1da4c",
       "d0b10fa27d2b934e",
-      "e02d1007491bbe66"
+      "d90b49d17a80a0c8",
+      "e02d1007491bbe66",
+      "e8f6b6edd79e54a7"
     ]
   },
   "sabah_tarih": "2026-09-28"
