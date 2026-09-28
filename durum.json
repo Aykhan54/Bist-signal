@@ -6,6 +6,7 @@
     "HRKET",
     "HUNER",
     "ISDMR",
+    "KRDMD",
     "TKFEN",
     "TUKAS"
   ],
@@ -165,7 +166,7 @@
   "alarm_tetik": [],
   "on_sinyal": {},
   "uv_son": {},
-  "kap_son": 1668904,
+  "kap_son": 1668940,
   "tk_gonderilen": {
     "tarih": "2026-09-28",
     "kodlar": []
