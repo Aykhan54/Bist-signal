@@ -124,7 +124,7 @@
     "EUPWR": "SAT",
     "EUREN": "SAT",
     "FENER": "SAT",
-    "FONET": "NÖTR",
+    "FONET": "SAT",
     "FORTE": "SAT",
     "FRIGO": "SAT",
     "FRMPL": "SAT",
@@ -358,6 +358,11 @@
       "tarih": "2026-09-28"
     },
     "EGGUB": {
+      "sinyal": "SAT",
+      "onceki": "NÖTR",
+      "tarih": "2026-09-28"
+    },
+    "FONET": {
       "sinyal": "SAT",
       "onceki": "NÖTR",
       "tarih": "2026-09-28"
