@@ -80,7 +80,7 @@
     "CANTE": "SAT",
     "CATES": "SAT",
     "CCOLA": "SAT",
-    "CELHA": "NÖTR",
+    "CELHA": "SAT",
     "CEMZY": "SAT",
     "CGCAM": "SAT",
     "CIMSA": "SAT",
@@ -332,6 +332,11 @@
       "tarih": "2026-09-28"
     },
     "BRSAN": {
+      "sinyal": "SAT",
+      "onceki": "NÖTR",
+      "tarih": "2026-09-28"
+    },
+    "CELHA": {
       "sinyal": "SAT",
       "onceki": "NÖTR",
       "tarih": "2026-09-28"
