@@ -3,7 +3,6 @@
     "AHGAZ",
     "BAHKM",
     "ENERY",
-    "GMTAS",
     "HRKET",
     "HUNER",
     "ISDMR",
@@ -175,7 +174,10 @@
   "gunici": {
     "tarih": "2026-09-28",
     "g": [
-      "83e80ff656021b31"
+      "83e80ff656021b31",
+      "9b02010e56d1da4c",
+      "d0b10fa27d2b934e",
+      "e02d1007491bbe66"
     ]
   },
   "sabah_tarih": "2026-09-28"
