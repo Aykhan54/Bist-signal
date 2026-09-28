@@ -285,8 +285,9 @@ def destek_direnc(df):
             "min_test": SD_MIN_TEST, "tepki": bool(tepki), "yaklas": bool(yaklas)}
 
 
-def _spark(d, n=130):
-    """Grafik verisi: son n gün (~6 ay) kapanış, ortalamalar, SuperTrend ve sinyal (A/S/N, AL/SAT dönüş işaretleri için)."""
+def _spark(d, n=130, tk_ham=None):
+    """Grafik verisi: son n gün (~6 ay) kapanış, ortalamalar, SuperTrend, gösterge sinyali (A/S/N, fare bilgisi) ve 🚀 v3
+    işlemleri: "tk" dizisi (G = kırılım/AL günü, C = iz stop çıkışı, . = yok) + "iz" (pozisyon açıkken iz stop seviyesi)."""
     t = d.tail(n)
     def arr(col):
         return [None if (col not in t or pd.isna(x)) else round(float(x), 2) for x in (t[col] if col in t else [np.nan]*len(t))]
@@ -295,6 +296,33 @@ def _spark(d, n=130):
            "sg": "".join({"AL": "A", "SAT": "S"}.get(x, "N") for x in t["SINYAL"])}
     if "ST_LINE" in t:
         out["st"] = arr("ST_LINE")
+    if tk_ham:
+        bas, m, cv = len(d) - len(t), len(t), d["Close"].values
+        isr, iz = ["."] * m, [None] * m
+        for x in tk_ham:
+            son = x["cik"] if x["cik"] is not None else len(d) - 1
+            if son < bas:
+                continue
+            if x["i"] >= bas:
+                isr[x["i"] - bas] = "G"
+            if x["cik"] is not None:
+                isr[x["cik"] - bas] = "C"
+            tepe = x["giris"]
+            for j in range(x["i"] + 1, son + 1):   # trend_kirilimi ile aynı: tepe girişten başlar, kapanışlarla güncellenir
+                tepe = max(tepe, float(cv[j]))
+                if j >= bas:
+                    iz[j - bas] = round(tepe * (1 - IZ_STOP_ORAN), 2)
+        out["tk"] = "".join(isr)
+        parca, i = [], 0   # iz stop parçaları [başlangıç sırası, [değerler]] (boş günler sayfayı şişirmesin)
+        while i < m:
+            if iz[i] is None:
+                i += 1; continue
+            j = i
+            while j < m and iz[j] is not None:
+                j += 1
+            parca.append([i, iz[i:j]]); i = j
+        if parca:
+            out["iz"] = parca
     return out
 
 
@@ -360,7 +388,7 @@ def trend_sablonu(d):
             & (c > d["SMA50"]) & (c >= 0.75 * mx) & (c >= 1.30 * mn))
 
 
-def trend_kirilimi(d, xu_ust=None, islemler=False):
+def trend_kirilimi(d, xu_ust=None, islemler=False, ham=False):
     """🚀 v3 giriş/çıkış (5 yıllık backtest'te v2'den iyi, bkz. CLAUDE.md): trend şablonundayken 20 günlük zirvenin
     ilk kırılımı (piyasa XU100 > SMA50, 60 gün oynaklık ≤ %5) → AL; ertesi açılıştan girilir, AL'den beri tepe
     kapanışın IZ_STOP_ORAN altına kapanışta çıkılır. Pozisyon açıkken yeni kırılımlar sayılmaz (backtest'le aynı)."""
@@ -387,6 +415,8 @@ def trend_kirilimi(d, xu_ust=None, islemler=False):
         if cik is None:
             acik = tum[-1]; break
         i = cik + 1
+    if ham:   # grafik için: gün sırası (i = kırılım günü, cik = çıkış günü) ile ham işlemler
+        return tum
     if islemler:
         return [(idx[t["i"] + 1] if t["i"] + 1 < n else idx[t["i"]], idx[t["cik"]] if t["cik"] is not None else None,
                  t["giris"], float(cv[t["cik"]]) if t["cik"] is not None else None) for t in tum]
@@ -577,6 +607,9 @@ def analiz_et(df, xu_ust=None):
     oynak = bool(not pd.isna(vol60) and vol60 > OYNAK_ESIK)
     s200 = d["SMA200"]
     trend = bool(len(d) > 220 and not pd.isna(s200.iloc[-1]) and fiyat > s200.iloc[-1] and s200.iloc[-1] > s200.iloc[-21])
+    # düşen trend: fiyat düşen SMA200'ün altında (portföy notu; bt/trend1.py: düşük faizde bu durumdakilerin ~%62-76'sı
+    # sonraki 60 günde endeksin gerisinde kaldı, yükselen trendde ~%50; yüksek faizde fark küçük)
+    trend_asagi = bool(len(d) > 220 and not pd.isna(s200.iloc[-21]) and fiyat < s200.iloc[-1] and s200.iloc[-1] < s200.iloc[-21])
     al_tarih = str(d.index[al_bas].date()) if al_bas is not None else None
 
     # hacim teyidi: AL'e dönüş günü hacmi önceki 20 günün ortalamasının HACIM_ESIK katından fazla mı
@@ -626,6 +659,7 @@ def analiz_et(df, xu_ust=None):
         "oynak": oynak,
         "vol60": None if pd.isna(vol60) else round(float(vol60) * 100, 1),
         "trend": trend,
+        "trend_asagi": trend_asagi,
         "v2_uygun": bool(trend and not oynak),   # v2 giriş filtresi (piyasa filtresi taramada)
         "al_tarih": al_tarih,
         "hacim_kat": hacim_kat,
@@ -645,5 +679,5 @@ def analiz_et(df, xu_ust=None):
         "sinyal_tarih": sinyal_tarih,
         "sinyal_degisim": sinyal_degisim,
         "yeni": bool(yeni),
-        "spark": _spark(d),
+        "spark": _spark(d, tk_ham=trend_kirilimi(d, xu_ust, ham=True)),
     }

@@ -121,7 +121,7 @@ def pano_uret(sonuclar, ornek=False, uyari=None, piyasa=None, yeni_arzlar=None, 
             "destek_tepki": bool(s.get("destek_tepki")), "direnc_yakin": bool(s.get("direnc_yakin")),
             "rsi": s.get("rsi"), "fk": s.get("fk"), "pddd": s.get("pddd"), "favok": s.get("favok"),
             "stop": s.get("stop"), "giris_stop": s.get("giris_stop"), "lot": s.get("lot"), "iz": s.get("iz"),
-            "oynak": bool(s.get("oynak")), "vol60": s.get("vol60"), "trend": bool(s.get("trend")), "v2_uygun": bool(s.get("v2_uygun")),
+            "oynak": bool(s.get("oynak")), "vol60": s.get("vol60"), "trend": bool(s.get("trend")), "trend_asagi": bool(s.get("trend_asagi")), "v2_uygun": bool(s.get("v2_uygun")),
             "hedef": s.get("hedef"), "sinyal_gun": s.get("sinyal_gun"), "notr_kaynak": s.get("notr_kaynak"),
             "sinyal_tarih": s.get("sinyal_tarih"), "sinyal_degisim": s.get("sinyal_degisim"),
             "uyum": s.get("uyum"), "detay": s.get("detay", []), "ek": s.get("ek", []),
@@ -305,7 +305,7 @@ tbody tr:hover,tbody tr:hover td{background:#F2F5F3}
 .pfbox{margin-top:18px}
 .pfbas{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}
 .pfbas h2{margin:0;font-size:16px}.pftop{font-weight:650;font-size:14px}.pftop.pos{color:var(--pos)}.pftop.neg{color:var(--neg)}
-table.pf{min-width:820px}
+table.pf{min-width:900px}
 .pfy.bos{padding:12px 14px;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:12.8px;background:#fff}
 .pfy.bos code{background:#F1F1EE;padding:2px 5px;border-radius:4px;font-size:12px}
 .pfuy{color:var(--sat);font-size:11px;font-weight:600;margin-left:6px}
@@ -328,7 +328,7 @@ table.pf{min-width:820px}
 .leg{display:flex;gap:14px;font-size:11px;color:var(--muted);margin-top:4px;padding-left:8px}
 .leg span::before{content:"";display:inline-block;width:10px;height:2px;margin-right:5px;vertical-align:middle}
 .leg .c1::before{background:#16181D}.leg .c2::before{background:#0E4D45}.leg .c3::before{background:#C7962B}.leg .c4::before{background:#B4362E}
-.leg .c5::before{background:#3A6EA5}.leg .c6::before{background:#B7791F}
+.leg .c5::before{background:#3A6EA5}.leg .c6::before{background:#B7791F}.leg .c7::before{background:repeating-linear-gradient(90deg,#7A3E9D 0 5px,transparent 5px 7px)}
 .leg{flex-wrap:wrap}
 .uyum{font-weight:650;color:var(--accent)}
 .uyroz{background:#EEF4F1;color:var(--accent);font-size:11.5px;font-weight:650;padding:2px 8px;border-radius:999px}
@@ -412,8 +412,10 @@ __ARZ__
 </div>
 </div>
 <div class="aciklama">
+<div class="kart"><h3>📖 Sistemi nasıl kullanırım?</h3><p><b>1.</b> 🚀 AL Telegram'a 17:30'dan sonra gelir: hisse güçlü trendde son 20 günün zirvesini aştı. İstersen o gün kapanışa kadar, istersen sonraki 5 gün içinde alırsın (testte fark küçük). Kapanışta tutmazsa 18:30'dan sonra "↩️ iptal" gelir.<br><b>2.</b> Parayı ~10 eşit parçaya böl; tek hisseye yüklenme.<br><b>3.</b> Aldıktan sonra tek kural <b>📍 iz stop</b>: AL'den beri en yüksek kapanışın %20 altı. Kapanış bunun altına inerse çık. Gün içi sarkma yetmez, kapanış belirler.<br><b>4.</b> Sabah ☀️ mesajında portföyünün seviyeleri, gün içinde 📍 önemli olaylar, akşam 💼 özet gelir.<br><b>5.</b> 🎈 / ⚠️ / 🪤 uyarıları olan hisselerde dikkatli ol; SAT, NÖTR ve destek/direnç bilgi amaçlıdır.</p></div>
+<div class="kart"><h3>📈 Grafik nasıl okunur?</h3><p>Hisseye tıklayınca açılan grafikte: <b>siyah çizgi</b> fiyat (son 6 ay). <b>Yeşil / sarı çizgi</b> 20 / 50 günlük ortalama: fiyat ikisinin üstündeyse kısa vadede güçlü. <b>Kırmızı çizgi</b> SuperTrend (gösterge sinyali). <b>Mavi / turuncu kesikli</b> destek / direnç. <b>🚀</b> Telegram'a gelen AL günü, <b>✕</b> iz stop'la çıkış günü, <b>mor kesikli çizgi</b> o pozisyonun iz stop'u: fiyat yükseldikçe yukarı çıkar, hiç aşağı inmez. Parmağını/fareni grafikte gezdirince o günün fiyatı ve iz stop'u görünür.</p></div>
 <div class="kart"><h3>Piyasa filtresi</h3><p>BIST 100, 50 günlük ortalamasının altındaysa üstte "Piyasa zayıf" uyarısı çıkar. 5 yıllık backtest'te bu dönemlerde gelen AL'ler belirgin şekilde daha kötü sonuç verdi.</p></div>
-<div class="kart"><h3>Çıkış ve hedef</h3><p><b>📍 İz stop</b>: AL'den beri görülen en yüksek kapanışın %20 altı; fiyat yükseldikçe yukarı taşınır, kapanış altına inerse "çık". SAT sinyali tek başına çıkış değildir (gece testleri: SAT'ta çıkmak yükseliş piyasasında kazancı eritiyordu; iz stop 2023'te −%6 yerine +%45). <b>🎯 1. hedef</b>: en yakın direnç — geçmişte satış gelen tepe. <b>🎯 2. hedef</b>: risk/ödül 2:1 (maliyetinden stop'a olan mesafenin 2 katı yukarısı). Hedefler satış emri değil, izleme noktasıdır: 5 yıllık backtest'te hedefte kısmi satış, SAT/stop'a kadar tutmaktan belirgin şekilde kötü sonuç verdi.</p></div>
+<div class="kart"><h3>Çıkış ve hedef</h3><p><b>📍 İz stop</b>: AL'den beri görülen en yüksek kapanışın %20 altı; fiyat yükseldikçe yukarı taşınır, kapanış altına inerse "çık". SAT sinyali tek başına çıkış değildir (gece testleri: SAT'ta çıkmak yükseliş piyasasında kazancı eritiyordu; iz stop 2023'te −%6 yerine +%45). <b>🎯 İzleme</b>: en yakın direnç — geçmişte satış gelen tepe. Hedef satış emri değil, izleme noktasıdır: 5 yıllık backtest'te hedefte kısmi satış, SAT/stop'a kadar tutmaktan belirgin şekilde kötü sonuç verdi.</p></div>
 <div class="kart"><h3>NÖTR: sarı mı turuncu mu?</h3><p><span class="pill notr notr-al">NÖTR</span> <b>Sarı = AL'den döndü.</b> Elindeyse tut; iz stop kırılırsa çık. Yeni alım yapma.<br><span class="pill notr notr-sat">NÖTR</span> <b>Turuncu = SAT'tan döndü.</b> Düşüş yavaşladı ama henüz alım sinyali değil; AL'i bekle. (5 yıllık backtest: NÖTR'de satmak ya da turuncuda almak, beklemekten kötü sonuç verdi.)</p></div>
 <div class="kart"><h3>Öneri lot (risk yönetimi)</h3><p>Stop yerse portföyünün sadece belirlediğin yüzdeyi (örn. %1) kaybedeceğin lot sayısı: (portföy×risk%)÷(fiyat−stop).</p></div>
 <div class="kart"><h3>RSI</h3><p>0–100 momentum. 30 altı aşırı satım, 70 üstü aşırı alım. Sağlıklı yükseliş 45–68 bandında.</p></div>
@@ -480,6 +482,9 @@ function bugunUyari(k,d,p){  // bir hisse için dikkat notları
  var u=[];if(!d)return u;
  if(p&&d.iz&&d.iz.cikti&&!p.uzun)u.push('📉 iz stop kırıldı');
  else if(p&&!p.uzun){var pl=pozPlan(d,p);if(pl.stop&&!pl.asildi&&pl.stopUzak>-3)u.push('iz stop\'a %'+Math.abs(pl.stopUzak).toFixed(1)+' kaldı');}
+ if(p&&p.uzun){var pu=pozPlan(d,p);if(pu.karar&&!pu.kararAsildi&&pu.kararUzak>-3)u.push('🧭 karar çizgisine %'+Math.abs(pu.kararUzak).toFixed(1)+' kaldı');}
+ if(p&&d.sd&&d.sd.destek&&d.fiyat&&d.sd.destek.fiyat/d.fiyat-1>-0.02)u.push('👉 desteğe %'+Math.abs((d.sd.destek.fiyat/d.fiyat-1)*100).toFixed(1)+' ('+d.sd.destek.fiyat+')');
+ if(p&&d.trend_asagi)u.push('📉 trend aşağı');
  if(d.tahta&&d.tahta.seviye==='sisme')u.push('🎈 şişme');
  if(d.tahta&&d.tahta.seviye==='dagitim')u.push('⚠️ dağıtım');
  if(d.tuzak)u.push('🪤 tuzak riski');
@@ -509,7 +514,7 @@ function bugunRender(){
 }
 function sinyalCls(d){if(d.sinyal==='AL')return 'al';if(d.sinyal==='SAT')return 'sat';
  return 'notr'+(d.notr_kaynak==='AL'?' notr-al':d.notr_kaynak==='SAT'?' notr-sat':'');}
-// Büyük grafik: fiyat/tarih eksenleri, AL/SAT dönüş işaretleri, destek/direnç çizgileri, fare/dokunma ile değer
+// Büyük grafik: fiyat/tarih eksenleri, 🚀 v3 AL ve ✕ çıkış işaretleri, iz stop çizgisi, destek/direnç, fare/dokunma ile değer
 var GR={W:600,H:260,L:6,R:54,T:10,B:24},_gr=null;
 var AYLAR=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
 function trTarih(s){var p=s.split('-');return (+p[2])+' '+AYLAR[+p[1]-1];}
@@ -519,6 +524,12 @@ function cizgi(vals,color,mn,mx,w){
  var pts=[],n=vals.length;
  for(var i=0;i<n;i++){if(vals[i]==null)continue;pts.push(grX(i,n).toFixed(1)+','+grY(vals[i],mn,mx).toFixed(1));}
  return '<polyline fill="none" stroke="'+color+'" stroke-width="'+w+'" points="'+pts.join(' ')+'"/>';
+}
+function cizgiParca(vals,color,mn,mx,w,dash){  // boşluklarda (null) kopan çizgi: her pozisyon ayrı parça
+ var g='',pts=[],n=vals.length;
+ for(var i=0;i<=n;i++){if(i<n&&vals[i]!=null){pts.push(grX(i,n).toFixed(1)+','+grY(vals[i],mn,mx).toFixed(1));continue;}
+  if(pts.length>1)g+='<polyline fill="none" stroke="'+color+'" stroke-width="'+w+'"'+(dash?' stroke-dasharray="'+dash+'"':'')+' points="'+pts.join(' ')+'"/>';pts=[];}
+ return g;
 }
 function yatay(v,color,mn,mx,ad){
  var y=grY(v,mn,mx).toFixed(1);
@@ -532,7 +543,8 @@ function adimlar(mn,mx){  // okunur eksen değerleri
 function grafik(sp,sd){
  if(!sp||!sp.c) return '<div style="color:#6B7079;font-size:13px">Grafik verisi yok.</div>';
  var ds=sd&&sd.destek?sd.destek.fiyat:null,dr=sd&&sd.direnc?sd.direnc.fiyat:null,n=sp.c.length;
- var hepsi=sp.c.concat(sp.s20||[],sp.s50||[],[ds,dr]).filter(function(x){return x!=null;});
+ if(sp.iz&&!sp.izg){sp.izg=new Array(n).fill(null);sp.iz.forEach(function(p){p[1].forEach(function(v,k){sp.izg[p[0]+k]=v;});});}  // iz stop parçaları → gün dizisi
+ var hepsi=sp.c.concat(sp.s20||[],sp.s50||[],sp.izg||[],[ds,dr]).filter(function(x){return x!=null;});
  var mn=Math.min.apply(null,hepsi),mx=Math.max.apply(null,hepsi),pay=(mx-mn)*0.04;mn-=pay;mx+=pay;
  _gr={sp:sp,mn:mn,mx:mx,n:n};
  var g='<svg id="grsvg" viewBox="0 0 '+GR.W+' '+GR.H+'" width="100%" style="display:block;touch-action:pan-y" onmousemove="grHover(event)" ontouchstart="grHover(event)" ontouchmove="grHover(event)" onmouseleave="grCik()">';
@@ -546,11 +558,12 @@ function grafik(sp,sd){
  if(sp.s50)g+=cizgi(sp.s50,'#C7962B',mn,mx,1.2);
  if(sp.s20)g+=cizgi(sp.s20,'#0E4D45',mn,mx,1.2);
  if(sp.st)g+=cizgi(sp.st,'#B4362E',mn,mx,1.3);
+ if(sp.izg)g+=cizgiParca(sp.izg,'#7A3E9D',mn,mx,1.4,'6 3');
  g+=cizgi(sp.c,'#16181D',mn,mx,1.8);
- if(sp.sg){var sonK='';for(var j=0;j<n;j++){var a=sp.sg[j];if(a==='N'||a===sonK){continue;}var ilk=sonK==='';sonK=a;if(ilk||sp.c[j]==null)continue;  // Telegram gibi: NÖTR ara geçişleri sayılmaz
-  var xx=grX(j,n),yy=grY(sp.c[j],mn,mx);
-  g+=a==='A'?'<path d="M'+xx.toFixed(1)+' '+(yy+6).toFixed(1)+' l-5 9 h10 z" fill="#1B7F4B"><title>AL: '+trTarih(sp.t[j])+'</title></path>'
-            :'<path d="M'+xx.toFixed(1)+' '+(yy-6).toFixed(1)+' l-5 -9 h10 z" fill="#B4362E"><title>SAT: '+trTarih(sp.t[j])+'</title></path>';}}
+ if(sp.tk)for(var j=0;j<n;j++){var a=sp.tk.charAt(j);if((a!=='G'&&a!=='C')||sp.c[j]==null)continue;   // Telegram'daki 🚀 AL ve iz stop çıkışı
+  var xx=grX(j,n).toFixed(1),yy=grY(sp.c[j],mn,mx);
+  g+=a==='G'?'<text x="'+xx+'" y="'+(yy+19).toFixed(1)+'" font-size="14" text-anchor="middle"><title>🚀 AL (kırılım): '+trTarih(sp.t[j])+'</title>🚀</text>'
+            :'<text x="'+xx+'" y="'+(yy-8).toFixed(1)+'" font-size="13" font-weight="700" fill="#7A3E9D" text-anchor="middle"><title>Çıkış (iz stop): '+trTarih(sp.t[j])+'</title>✕</text>';}
  g+='<line id="grcizgi" x1="0" x2="0" y1="'+GR.T+'" y2="'+(GR.H-GR.B)+'" stroke="#16181D" stroke-width="0.8" stroke-dasharray="3 3" visibility="hidden"/>'+
     '<circle id="grnokta" r="3.5" fill="#16181D" visibility="hidden"/></svg><div id="grbilgi" class="grbilgi" hidden></div>';
  return g;
@@ -562,8 +575,9 @@ function grHover(e){
  var xx=grX(i,n),yy=grY(sp.c[i],_gr.mn,_gr.mx),cz=document.getElementById('grcizgi'),nk=document.getElementById('grnokta'),b=document.getElementById('grbilgi');
  cz.setAttribute('x1',xx);cz.setAttribute('x2',xx);cz.setAttribute('visibility','visible');
  nk.setAttribute('cx',xx);nk.setAttribute('cy',yy);nk.setAttribute('visibility','visible');
- var sg={A:'AL',S:'SAT',N:'NÖTR'}[(sp.sg||'')[i]]||'';
- b.innerHTML='<b>'+trTarih(sp.t[i])+' '+sp.t[i].slice(0,4)+'</b> · '+sp.c[i]+' TL'+(sg?' · '+sg:'')+
+ var ta={G:' · 🚀 AL',C:' · ✕ çıkış'}[(sp.tk||'').charAt(i)]||'';
+ b.innerHTML='<b>'+trTarih(sp.t[i])+' '+sp.t[i].slice(0,4)+'</b> · '+sp.c[i]+' TL'+ta+
+  (sp.izg&&sp.izg[i]!=null?'<br><span style="color:#7A3E9D">İz stop '+sp.izg[i]+'</span>':'')+
   (sp.s20&&sp.s20[i]!=null?'<br><span style="color:#0E4D45">SMA20 '+sp.s20[i]+'</span>':'')+(sp.s50&&sp.s50[i]!=null?' · <span style="color:#C7962B">SMA50 '+sp.s50[i]+'</span>':'');
  b.hidden=false;b.style.left=Math.min(Math.max(xx/GR.W*100,2),70)+'%';
 }
@@ -766,7 +780,7 @@ function ac(k){
  (d.bolunme?'<div class="arzkutu">✂️ <b>Bedelsiz/bölünme:</b> '+d.bolunme+' tarihinde fiyat tek günde sınırın ötesinde değişti; grafik ve göstergeler buna göre düzeltildi. Portföyündeyse maliyetini aracı kurumdaki yeni maliyetle güncelle.</div>':'')+
  '<div class="grafik">'+grafik(d.spark,d.sd)+'<div class="leg"><span class="c1">Fiyat</span><span class="c2">SMA20</span><span class="c3">SMA50</span><span class="c4">SuperTrend</span>'+
    (d.sd&&d.sd.destek?'<span class="c5">Destek</span>':'')+(d.sd&&d.sd.direnc?'<span class="c6">Direnç</span>':'')+
-   '<span style="color:#1B7F4B">▲ AL</span><span style="color:#B4362E">▼ SAT</span></div></div>'+
+   '<span class="c7">İz stop</span><span>🚀 AL</span><span style="color:#7A3E9D">✕ çıkış</span></div></div>'+
  zaman+
  pozHtml(k,d)+tkHtml(d)+gucHtml(d)+uvHtml(d)+
  sdHtml(d)+
@@ -933,7 +947,7 @@ function pfRender(){
  var a=pfOku(),liste=document.getElementById('pflist'),top=document.getElementById('pftop');
  if(!a.length){liste.innerHTML='<div class="pfy bos">Henüz hisse yok. <b>+ Ekle</b> ile portföyünü oluştur.</div>';top.textContent='';return;}
  var toplam=0;
- var r='<div class="sar"><table class="pf"><thead><tr><th>Hisse</th><th class="num">Adet</th><th class="num">Maliyet</th><th class="num">Güncel</th><th class="num">K/Z %</th><th class="num">K/Z TL</th><th>Sinyal</th><th class="num">Çıkış (stop)</th><th class="num">Hedef</th><th></th></tr></thead><tbody>';
+ var r='<div class="sar"><table class="pf"><thead><tr><th>Hisse</th><th class="num">Adet</th><th class="num">Maliyet</th><th class="num">Güncel</th><th class="num">K/Z %</th><th class="num">K/Z TL</th><th>Sinyal</th><th class="num" title="Fiyatın altındaki en yakın destek (son 120 günün dibi)">Destek</th><th class="num">Çıkış (stop)</th><th class="num">Hedef</th><th></th></tr></thead><tbody>';
  a.forEach(function(p,i){
   var d=DATA[p.kod]||{},f=d.fiyat;
   var kzy=(f!=null)?((f/p.maliyet-1)*100):null, kzt=(f!=null)?((f-p.maliyet)*p.adet):null;
@@ -947,6 +961,8 @@ function pfRender(){
        (p.xu_birim&&XU?(function(){var xy=(p.xu_birim*XU.c[XU.c.length-1]/(p.adet*p.maliyet)-1)*100;return '<span class="pfxu" title="Aynı parayla '+p.tarih+' tarihinde BIST 100 alsaydın">XU100 '+(xy>=0?'+':'')+xy.toFixed(1)+'%</span>';})():'')+'</td>'+
      '<td class="num '+kzc+'">'+(kzt!=null?((kzt>=0?'+':'')+Math.round(kzt).toLocaleString('tr-TR')+' TL'):'—')+'</td>'+
      '<td><span class="pill '+scls+'">'+sn+'</span>'+uy+''+'</td>'+
+     (function(){var ds=d.sd&&d.sd.destek;if(f==null||!ds)return '<td class="num">—</td>';var u=(ds.fiyat/f-1)*100;
+       return '<td class="num" title="'+ds.tarih+' dibi'+(ds.test>=2?', '+ds.test+' kez test edildi':'')+'">'+(u>-2?'👉 ':'')+ds.fiyat+' <span class="sgun">'+yzd(u)+'</span></td>';})()+
      (function(){if(f==null)return '<td class="num">—</td><td class="num">—</td>';var pl=pozPlan(d,p),h=pl.hedefler.length?pl.hedefler[0][0]:null;
        if(pl.uzun)return '<td class="num stop">'+(pl.karar?(pl.kararAsildi?'<b>🧭 '+pl.karar+' ⚠</b>':'🧭 '+pl.karar+' <span class="sgun">'+yzd(pl.kararUzak)+'</span>'):'—')+'</td>'+
               '<td class="num pos">'+(h?h+' <span class="sgun">'+yzd((h/f-1)*100)+'</span>':'—')+'</td>';
