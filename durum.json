@@ -3,12 +3,9 @@
     "AHGAZ",
     "BAHKM",
     "ENERY",
-    "GMTAS",
     "HRKET",
     "HUNER",
     "ISDMR",
-    "KRDMD",
-    "MAVI",
     "TKFEN",
     "TOASO",
     "TUKAS"
@@ -177,7 +174,9 @@
   "mom_ay": {},
   "gunici": {
     "tarih": "2026-09-28",
-    "g": []
+    "g": [
+      "83e80ff656021b31"
+    ]
   },
   "sabah_tarih": "2026-09-28"
 }
