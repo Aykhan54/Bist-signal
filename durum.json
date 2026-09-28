@@ -241,7 +241,7 @@
     "PAPIL": "SAT",
     "PASEU": "SAT",
     "PATEK": "SAT",
-    "PCILT": "NÖTR",
+    "PCILT": "SAT",
     "PEKGY": "SAT",
     "PENTA": "SAT",
     "PETKM": "SAT",
@@ -354,6 +354,11 @@
     },
     "HALKB": {
       "sinyal": "AL",
+      "onceki": "NÖTR",
+      "tarih": "2026-09-28"
+    },
+    "PCILT": {
+      "sinyal": "SAT",
       "onceki": "NÖTR",
       "tarih": "2026-09-28"
     },
