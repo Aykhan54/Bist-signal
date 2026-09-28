@@ -7,7 +7,8 @@
     "HUNER",
     "ISDMR",
     "KRDMD",
-    "TKFEN"
+    "TKFEN",
+    "TUKAS"
   ],
   "son": {
     "AAGYO": "SAT",
@@ -165,7 +166,7 @@
   "alarm_tetik": [],
   "on_sinyal": {},
   "uv_son": {},
-  "kap_son": 1668871,
+  "kap_son": 1668904,
   "tk_gonderilen": {
     "tarih": "2026-09-28",
     "kodlar": []
