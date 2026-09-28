@@ -2,7 +2,9 @@
   "al": [
     "AHGAZ",
     "BAHKM",
+    "BIMAS",
     "ENERY",
+    "GMTAS",
     "HRKET",
     "HUNER",
     "ISDMR",
@@ -166,7 +168,7 @@
   "alarm_tetik": [],
   "on_sinyal": {},
   "uv_son": {},
-  "kap_son": 1668423,
+  "kap_son": 1668499,
   "tk_gonderilen": {
     "tarih": "2026-09-28",
     "kodlar": []
