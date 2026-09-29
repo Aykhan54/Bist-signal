@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 """Etkileşimli pano: satıra tıkla -> grafik + o hisseye özel yorum + TradingView linki."""
 import json
+import os
 import pandas as pd
+
+# Hangi GitHub deposu: Actions GITHUB_REPOSITORY verir (arkadaşın kopyasında onun deposu); yerelde varsayılan.
+REPO = os.environ.get("GITHUB_REPOSITORY") or "BoranZZ/Bist-signal"
 
 RENK = {"AL": "al", "NÖTR": "notr", "SAT": "sat"}
 
@@ -160,7 +164,7 @@ def pano_uret(sonuclar, ornek=False, uyari=None, piyasa=None, yeni_arzlar=None, 
                    '<th class="num">Sinyale kalan</th></tr></thead><tbody>' + "".join(arzrows) + '</tbody></table></div>')
 
     html = _SABLON
-    for a, b in [("__TARIH__", tarih), ("__AL__", str(al)), ("__GUCLU__", str(guclu)),
+    for a, b in [("__TARIH__", tarih), ("__REPO__", REPO), ("__AL__", str(al)), ("__GUCLU__", str(guclu)),
                  ("__TOPLAM__", str(len(sonuclar))),
                  ("__TKBUGUN__", str(sum(1 for s in sonuclar if (s.get("tk") or {}).get("bugun")))),
                  ("__TK5__", str(sum(1 for s in sonuclar if (s.get("tk") or {}).get("durum") == "AL" and ((s.get("tk") or {}).get("gun") or 0) <= 5))), ("__BANNER__", banner),
@@ -341,7 +345,7 @@ table.pf{min-width:900px}
 @media(max-width:560px){.ozet .b{font-size:30px}}
 </style>
 </head><body><div class="wrap">
-<header><div><h1>BIST Sinyal Panosu</h1><div class="tarih">Son güncelleme: __TARIH__ · <a href="#" onclick="yenile();return false" title="Sayfanın en son halini getirir (önbelleği atlar)">↻ Yenile</a> · <a href="https://github.com/BoranZZ/Bist-signal/actions/workflows/tarama.yml" target="_blank" rel="noopener" title="GitHub'da 'Run workflow' ile taramayı hemen başlat; 3-5 dk sonra Yenile'ye bas">Taramayı şimdi başlat ↗</a></div></div>
+<header><div><h1>BIST Sinyal Panosu</h1><div class="tarih">Son güncelleme: __TARIH__ · <a href="#" onclick="yenile();return false" title="Sayfanın en son halini getirir (önbelleği atlar)">↻ Yenile</a> · <a href="https://github.com/__REPO__/actions/workflows/tarama.yml" target="_blank" rel="noopener" title="GitHub'da 'Run workflow' ile taramayı hemen başlat; 3-5 dk sonra Yenile'ye bas">Taramayı şimdi başlat ↗</a></div></div>
 <div class="ozet">
 <div><div class="b">__TKBUGUN__</div><div class="l">bugün 🚀 AL</div></div>
 <div><div class="b g">__TK5__</div><div class="l">son 5 günde 🚀 AL · __TOPLAM__ hisse taranıyor</div></div>
@@ -796,7 +800,7 @@ function ac(k){
 function kapat(){document.getElementById('ust').classList.remove('acik');_gr=null;}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')kapat();});
 
-var PF_KEY='portfoyum_v1',GH_KEY='gh_anahtar_v1',GH_REPO='BoranZZ/Bist-signal',pfDuzenlenen=-1;
+var PF_KEY='portfoyum_v1',GH_KEY='gh_anahtar_v1',GH_REPO=(function(){var h=location.hostname,p=location.pathname.split('/')[1];return /\.github\.io$/.test(h)&&p?h.split('.')[0]+'/'+p:'__REPO__';})(),pfDuzenlenen=-1;
 function pfOku(){try{return JSON.parse(localStorage.getItem(PF_KEY))||[]}catch(e){return[]}}
 function pfYazYerel(a){try{localStorage.setItem(PF_KEY,JSON.stringify(a))}catch(e){}}
 function pfYaz(a){pfYazYerel(a);pfBulutYaz(a);}

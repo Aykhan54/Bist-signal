@@ -25,6 +25,17 @@ jobs:
     steps:
       - name: Depoyu al
         uses: actions/checkout@v4
+      # Sadece arkadaş kopyalarında (fork): ana projenin yeni kodunu al; kendi portföy/durum dosyaların değişmez.
+      # Kapatmak için kendi deponda Variables'a KOD_GUNCELLE = hayir ekle. (Workflow dosyaları elle güncellenir.)
+      - name: Ana projeden kodu güncelle
+        if: github.repository != 'BoranZZ/Bist-signal' && vars.KOD_GUNCELLE != 'hayir'
+        run: |
+          git config user.name "bist-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git fetch --depth=1 https://github.com/BoranZZ/Bist-signal.git main
+          git checkout FETCH_HEAD -- '*.py' requirements.txt '*.md'
+          git add -A '*.py' requirements.txt '*.md'
+          git commit -m "Ana projeden kod guncellendi" || echo "kod zaten guncel"
       - name: Python kur
         uses: actions/setup-python@v5
         with:

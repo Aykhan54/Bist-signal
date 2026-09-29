@@ -24,6 +24,14 @@ komutlarını tek tek ver.
   hisseyi ele verir — karar çizgisi dünkü veriden yeniden hesaplanır). 2026-09-25/26'da `sat_teyit` düz kodla
   yazılmıştı (5 portföy kodu herkese açık göründü) — düzeltildi; git geçmişinde duruyor.
 
+## Arkadaş kopyaları (fork)
+Başkası kendi portföyü/Telegram'ı için repo'yu fork'lar (adımlar `KENDI-KOPYAN.md`). Bu yüzden depo adı sabit yazılmaz:
+`pano.REPO` / `tarama.PANO_URL` Actions'ın `GITHUB_REPOSITORY`'sinden, panodaki `GH_REPO` adres çubuğundan (`<kullanıcı>.github.io/<repo>`)
+türetilir; yerelde `BoranZZ/Bist-signal`. Fork'ta `tarama.yml` her taramada ana projeden `*.py`, `requirements.txt`, `*.md`'yi
+alır (`KOD_GUNCELLE=hayir` variable'ı kapatır); veri dosyaları (durum/gecmis/index) fork'un kendisinin. Workflow dosyaları
+GITHUB_TOKEN ile güncellenemez → workflow değişirse arkadaşa elle güncellemesini söyle. Yeni veri dosyası eklerken
+`*.py`/`*.md` dışında bırak (aksi halde ana projeninki fork'unkini ezer).
+
 ## Dosyalar
 - `sinyal.py` — gösterge + sinyal çekirdeği. **Tek kural seti** (canlı tarama + backtest ortak).
   SuperTrend, MACD, EMA20/50, RSI, Stochastic oy verir; ADX/Bollinger bağlam. `analiz_et(df)`

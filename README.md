@@ -2,6 +2,10 @@
 
 Hafta içi, piyasa saatlerinde **~15 dk'da bir** çalışır: BIST 100'ü tarar, panoyu günceller, yeni AL'leri (ve portföyündeki yeni SAT'ları) Telegram'a yollar. Ücretsiz (public repo + Actions + Pages). Veri ~15 dk gecikmeli olabilir.
 
+## Arkadaşın da kullanmak istiyorsa
+Kendi GitHub hesabına bir kopya (fork) açıp kendi Telegram botunu bağlaması yeterli: adımlar **[KENDI-KOPYAN.md](KENDI-KOPYAN.md)**.
+Kendi GitHub anahtarını ona **verme**: senin portföyünü görür ve üstüne yazar.
+
 ## Sayfalar
 - **index.html** — ana pano: Portföyüm bölümü + tüm hisseler. Satıra tıkla → grafik + o hisseye özel yorum + TradingView.
 - **gecmis.html** — Sinyal Geçmişi (canlı karne): açık takipler + kapanmış sinyaller + isabet oranı.
@@ -32,7 +36,7 @@ GitHub'ın kendi zamanlayıcısı ücretsiz hesapta saatlerce gecikebiliyor ya d
    - Permissions → Repository permissions → **Actions: Read and write**
    - **Generate token**'a bas, çıkan anahtarı kopyala. Bir daha gösterilmez; kimseyle paylaşma.
 2. **cron-job.org:** Üye ol → **Create cronjob**.
-   - URL: `https://api.github.com/repos/BoranZZ/Bist-signal/actions/workflows/tarama.yml/dispatches`
+   - URL: `https://api.github.com/repos/BoranZZ/Bist-signal/actions/workflows/tarama.yml/dispatches` (kendi kopyandaysan `BoranZZ` yerine kendi kullanıcı adın)
    - Execution schedule → **Custom**: dakika `0,15,30,45`; saat `10-18`; gün: Pazartesi–Cuma. Saat dilimi: `Europe/Istanbul`.
    - **Advanced** sekmesi:
      - Request method: **POST**

@@ -58,7 +58,8 @@ HALKA_ARZ = {
 PORTFOY_TL = 100_000
 RISK_YUZDESI = 1.0
 ASIRI_ISLEM_ESIGI = 8
-PANO_URL = "https://boranzz.github.io/Bist-signal/"
+_REPO = (os.environ.get("GITHUB_REPOSITORY") or "BoranZZ/Bist-signal").split("/")
+PANO_URL = f"https://{_REPO[0].lower()}.github.io/{_REPO[1]}/"   # arkadaşın kopyasında onun sitesi
 # Telegram: tüm hisselerde yeni AL; SAT sadece portföydekiler (PORTFOY variable'ı, panodan otomatik yazılır).
 # ============================================
 
