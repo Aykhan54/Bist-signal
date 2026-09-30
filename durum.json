@@ -1,5 +1,6 @@
 {
   "al": [
+    "AHGAZ",
     "ENERY",
     "GMTAS",
     "HRKET",
@@ -591,7 +592,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1670283,
+  "kap_son": 1670313,
   "tk_gonderilen": {
     "tarih": "2026-09-30",
     "kodlar": []
@@ -633,6 +634,7 @@
       "404e6f04e57ecb0e",
       "453901ec1faf93a4",
       "928ce0a3001bf0fd",
+      "97555142011a8b78",
       "b93cff6b71765f5c",
       "e166b249edb90b27",
       "e639d938f0564690",
