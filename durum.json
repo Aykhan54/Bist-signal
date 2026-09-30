@@ -592,7 +592,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1670083,
+  "kap_son": 1670111,
   "tk_gonderilen": {
     "tarih": "2026-09-30",
     "kodlar": []
@@ -630,6 +630,9 @@
     "tarih": "2026-09-30",
     "g": [
       "1355a4702f6afce1",
+      "36d84db509b43821",
+      "b93cff6b71765f5c",
+      "e166b249edb90b27",
       "fe00b48dc27b7c3d"
     ]
   },
