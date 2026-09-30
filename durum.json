@@ -11,7 +11,7 @@
     "ADEL": "SAT",
     "ADESE": "SAT",
     "AEFES": "SAT",
-    "AGHOL": "AL",
+    "AGHOL": "SAT",
     "AGROT": "SAT",
     "AHGAZ": "AL",
     "AKBNK": "SAT",
@@ -267,7 +267,7 @@
     "SMRVA": "SAT",
     "SNGYO": "SAT",
     "SOHOE": "SAT",
-    "SOKM": "AL",
+    "SOKM": "SAT",
     "SUNTK": "SAT",
     "SURGY": "SAT",
     "SVGYO": "SAT",
@@ -329,6 +329,11 @@
   "karar_kirilim_g": [],
   "alarm_tetik": [],
   "on_sinyal": {
+    "AGHOL": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-09-30"
+    },
     "AKFIS": {
       "sinyal": "AL",
       "onceki": "NÖTR",
@@ -345,6 +350,11 @@
       "tarih": "2026-09-30"
     },
     "KRDMD": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-09-30"
+    },
+    "SOKM": {
       "sinyal": "SAT",
       "onceki": "AL",
       "tarih": "2026-09-30"
@@ -623,7 +633,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1670389,
+  "kap_son": 1670395,
   "tk_gonderilen": {
     "tarih": "2026-09-30",
     "kodlar": []
