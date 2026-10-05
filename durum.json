@@ -8,9 +8,9 @@
     "HUNER",
     "ISDMR",
     "LOGO",
+    "MAVI",
     "ORGE",
-    "TKFEN",
-    "TUPRS"
+    "TKFEN"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -601,7 +601,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1672163,
+  "kap_son": 1672194,
   "tk_gonderilen": {
     "tarih": "2026-10-05",
     "kodlar": []
