@@ -2,12 +2,12 @@
   "al": [
     "AHGAZ",
     "AKFIS",
-    "BRSAN",
     "CELHA",
     "ENERY",
     "GMTAS",
     "HRKET",
     "HUNER",
+    "INDES",
     "ISDMR",
     "LOGO",
     "MAVI",
@@ -603,7 +603,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1671715,
+  "kap_son": 1671726,
   "tk_gonderilen": {
     "tarih": "2026-10-05",
     "kodlar": []
@@ -639,7 +639,9 @@
   },
   "gunici": {
     "tarih": "2026-10-05",
-    "g": []
+    "g": [
+      "54eb1cf70785ba8b"
+    ]
   },
   "sabah_tarih": "2026-10-05"
 }
