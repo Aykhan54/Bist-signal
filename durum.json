@@ -10,8 +10,7 @@
     "LOGO",
     "MAVI",
     "ORGE",
-    "TKFEN",
-    "TUPRS"
+    "TKFEN"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -618,7 +617,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1672423,
+  "kap_son": 1672478,
   "tk_gonderilen": {
     "tarih": "2026-10-05",
     "kodlar": []
