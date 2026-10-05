@@ -4,7 +4,6 @@
     "AKFIS",
     "CELHA",
     "ENERY",
-    "GMTAS",
     "HRKET",
     "HUNER",
     "INDES",
@@ -603,7 +602,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1671726,
+  "kap_son": 1671740,
   "tk_gonderilen": {
     "tarih": "2026-10-05",
     "kodlar": []
@@ -640,7 +639,8 @@
   "gunici": {
     "tarih": "2026-10-05",
     "g": [
-      "54eb1cf70785ba8b"
+      "54eb1cf70785ba8b",
+      "fe00b48dc27b7c3d"
     ]
   },
   "sabah_tarih": "2026-10-05"
