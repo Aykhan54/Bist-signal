@@ -4,13 +4,16 @@
     "AKFIS",
     "CELHA",
     "ENERY",
+    "FRIGO",
     "HRKET",
     "HUNER",
     "INDES",
     "ISDMR",
     "LOGO",
     "MAVI",
+    "MPARK",
     "ORGE",
+    "TAVHL",
     "TKFEN"
   ],
   "son": {
@@ -638,7 +641,10 @@
   },
   "gunici": {
     "tarih": "2026-10-06",
-    "g": []
+    "g": [
+      "54eb1cf70785ba8b",
+      "fe00b48dc27b7c3d"
+    ]
   },
   "sabah_tarih": "2026-10-06"
 }
