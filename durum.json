@@ -5,6 +5,7 @@
     "ENERY",
     "FRIGO",
     "HRKET",
+    "HUNER",
     "INDES",
     "LOGO",
     "METRO",
@@ -127,7 +128,7 @@
     "FENER": "SAT",
     "FONET": "SAT",
     "FORTE": "SAT",
-    "FRIGO": "SAT",
+    "FRIGO": "AL",
     "FRMPL": "SAT",
     "FROTO": "SAT",
     "FZLGY": "SAT",
@@ -166,7 +167,7 @@
     "IEYHO": "SAT",
     "IHAAS": "SAT",
     "IHLAS": "SAT",
-    "INDES": "SAT",
+    "INDES": "AL",
     "INFO": "SAT",
     "ISCTR": "SAT",
     "ISDMR": "AL",
@@ -259,7 +260,7 @@
     "RGYAS": "SAT",
     "RTALB": "SAT",
     "RUBNS": "SAT",
-    "RYGYO": "NÖTR",
+    "RYGYO": "AL",
     "RYSAS": "SAT",
     "SAFKR": "SAT",
     "SAHOL": "SAT",
@@ -337,7 +338,23 @@
   "hafta_tarih": "2026-10-02",
   "karar_kirilim_g": [],
   "alarm_tetik": [],
-  "on_sinyal": {},
+  "on_sinyal": {
+    "FRIGO": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-10-06"
+    },
+    "INDES": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-10-06"
+    },
+    "RYGYO": {
+      "sinyal": "AL",
+      "onceki": "NÖTR",
+      "tarih": "2026-10-06"
+    }
+  },
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -601,7 +618,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1673337,
+  "kap_son": 1673502,
   "tk_gonderilen": {
     "tarih": "2026-10-06",
     "kodlar": []
