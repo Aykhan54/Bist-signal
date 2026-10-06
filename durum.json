@@ -11,6 +11,7 @@
     "METRO",
     "ORGE",
     "RYGYO",
+    "TAVHL",
     "TKFEN"
   ],
   "son": {
@@ -284,7 +285,7 @@
     "TABGD": "SAT",
     "TARKM": "SAT",
     "TATEN": "SAT",
-    "TAVHL": "SAT",
+    "TAVHL": "AL",
     "TCELL": "SAT",
     "TCKRC": "SAT",
     "TEHOL": "SAT",
@@ -352,6 +353,11 @@
     "RYGYO": {
       "sinyal": "AL",
       "onceki": "NÖTR",
+      "tarih": "2026-10-06"
+    },
+    "TAVHL": {
+      "sinyal": "AL",
+      "onceki": "SAT",
       "tarih": "2026-10-06"
     }
   },
@@ -655,6 +661,7 @@
   "gunici": {
     "tarih": "2026-10-06",
     "g": [
+      "10c5d4d73bba77ec",
       "54eb1cf70785ba8b",
       "78f275994eea8a0d",
       "fe00b48dc27b7c3d"
