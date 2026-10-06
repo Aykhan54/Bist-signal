@@ -8,10 +8,7 @@
     "HRKET",
     "HUNER",
     "INDES",
-    "ISDMR",
     "LOGO",
-    "MAVI",
-    "MPARK",
     "ORGE",
     "TAVHL",
     "TKFEN"
@@ -605,7 +602,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1672678,
+  "kap_son": 1672702,
   "tk_gonderilen": {
     "tarih": "2026-10-06",
     "kodlar": []
