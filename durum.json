@@ -2,7 +2,6 @@
   "al": [
     "AHGAZ",
     "AKFIS",
-    "CELHA",
     "ENERY",
     "FRIGO",
     "HRKET",
@@ -640,6 +639,7 @@
     "tarih": "2026-10-06",
     "g": [
       "54eb1cf70785ba8b",
+      "78f275994eea8a0d",
       "fe00b48dc27b7c3d"
     ]
   },
