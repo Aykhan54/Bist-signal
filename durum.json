@@ -3,13 +3,10 @@
     "AHGAZ",
     "AKFIS",
     "ENERY",
-    "FRIGO",
     "HRKET",
     "INDES",
     "LOGO",
-    "ORGE",
     "RYGYO",
-    "TAVHL",
     "TKFEN"
   ],
   "son": {
@@ -637,7 +634,9 @@
   },
   "gunici": {
     "tarih": "2026-10-07",
-    "g": []
+    "g": [
+      "10c5d4d73bba77ec"
+    ]
   },
   "sabah_tarih": "2026-10-07"
 }
