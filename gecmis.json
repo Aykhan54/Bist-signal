@@ -30,8 +30,8 @@
       "giris_fiyat": 411.5,
       "stop": 329.2,
       "durum": "açık",
-      "guncel": 379.0,
-      "anlik": -7.9,
+      "guncel": 380.0,
+      "anlik": -7.7,
       "tepe": 411.5
     },
     {
@@ -40,8 +40,8 @@
       "giris_fiyat": 46.2,
       "stop": 38.06,
       "durum": "açık",
-      "guncel": 44.82,
-      "anlik": -3.0,
+      "guncel": 44.7,
+      "anlik": -3.2,
       "tepe": 47.58
     },
     {
@@ -50,8 +50,8 @@
       "giris_fiyat": 5827.5,
       "stop": 4662.0,
       "durum": "açık",
-      "guncel": 4970.0,
-      "anlik": -14.7,
+      "guncel": 4987.5,
+      "anlik": -14.4,
       "tepe": 5827.5
     },
     {
@@ -74,19 +74,19 @@
       "giris_fiyat": 44.34,
       "stop": 38.46,
       "durum": "açık",
-      "guncel": 48.08,
-      "anlik": 8.4,
+      "guncel": 47.84,
+      "anlik": 7.9,
       "tepe": 48.08
     },
     {
       "kod": "ENERY",
       "giris_tarih": "2026-09-25",
       "giris_fiyat": 13.36,
-      "stop": 11.21,
+      "stop": 11.22,
       "durum": "açık",
-      "guncel": 14.01,
+      "guncel": 14.02,
       "anlik": 4.9,
-      "tepe": 14.01
+      "tepe": 14.02
     },
     {
       "kod": "ISDMR",
@@ -104,8 +104,8 @@
       "giris_fiyat": 58.2,
       "stop": 46.56,
       "durum": "açık",
-      "guncel": 55.65,
-      "anlik": -4.4,
+      "guncel": 55.85,
+      "anlik": -4.0,
       "tepe": 58.2
     },
     {
@@ -114,8 +114,8 @@
       "giris_fiyat": 290.25,
       "stop": 232.2,
       "durum": "açık",
-      "guncel": 267.75,
-      "anlik": -7.8,
+      "guncel": 266.5,
+      "anlik": -8.2,
       "tepe": 290.25
     },
     {
@@ -124,8 +124,8 @@
       "giris_fiyat": 429.0,
       "stop": 343.2,
       "durum": "açık",
-      "guncel": 405.0,
-      "anlik": -5.6,
+      "guncel": 404.0,
+      "anlik": -5.8,
       "tepe": 429.0
     }
   ]
