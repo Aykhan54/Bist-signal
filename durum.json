@@ -4,7 +4,8 @@
     "AKFIS",
     "HRKET",
     "LOGO",
-    "TKFEN"
+    "TKFEN",
+    "TUPRS"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -597,7 +598,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1676275,
+  "kap_son": 1676404,
   "tk_gonderilen": {
     "tarih": "2026-10-08",
     "kodlar": []
