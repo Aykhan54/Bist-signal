@@ -3,6 +3,7 @@
     "AHGAZ",
     "AKFIS",
     "ENERY",
+    "GMTAS",
     "HRKET",
     "INDES",
     "LOGO",
@@ -599,7 +600,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1675563,
+  "kap_son": 1675646,
   "tk_gonderilen": {
     "tarih": "2026-10-08",
     "kodlar": []
