@@ -10,6 +10,7 @@
     "INDES",
     "ISDMR",
     "LOGO",
+    "METRO",
     "MIATK",
     "ORGE",
     "OTKAR",
@@ -607,7 +608,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1678425,
+  "kap_son": 1678466,
   "tk_gonderilen": {
     "tarih": "2026-10-09",
     "kodlar": []
@@ -644,6 +645,7 @@
   "gunici": {
     "tarih": "2026-10-09",
     "g": [
+      "5c17e2bfa57b3eb7",
       "ce6406bd560b1893",
       "de0a55756fc13760"
     ]
