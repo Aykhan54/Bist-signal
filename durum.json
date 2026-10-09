@@ -9,12 +9,12 @@
     "HRKET",
     "HUNER",
     "INDES",
+    "ISDMR",
     "LMKDC",
     "LOGO",
     "ORGE",
     "OTKAR",
     "RYGYO",
-    "TAVHL",
     "TKFEN"
   ],
   "son": {
@@ -609,7 +609,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1678506,
+  "kap_son": 1678551,
   "tk_gonderilen": {
     "tarih": "2026-10-09",
     "kodlar": []
