@@ -6,8 +6,8 @@
       "giris_fiyat": 34.38,
       "stop": 27.5,
       "durum": "açık",
-      "guncel": 32.66,
-      "anlik": -5.0,
+      "guncel": 32.8,
+      "anlik": -4.6,
       "tepe": 34.38
     },
     {
@@ -30,8 +30,8 @@
       "giris_fiyat": 411.5,
       "stop": 329.2,
       "durum": "açık",
-      "guncel": 385.75,
-      "anlik": -6.3,
+      "guncel": 378.25,
+      "anlik": -8.1,
       "tepe": 411.5
     },
     {
@@ -40,8 +40,8 @@
       "giris_fiyat": 46.2,
       "stop": 38.06,
       "durum": "açık",
-      "guncel": 43.14,
-      "anlik": -6.6,
+      "guncel": 43.44,
+      "anlik": -6.0,
       "tepe": 47.58
     },
     {
@@ -50,8 +50,8 @@
       "giris_fiyat": 5827.5,
       "stop": 4662.0,
       "durum": "açık",
-      "guncel": 5140.0,
-      "anlik": -11.8,
+      "guncel": 5107.5,
+      "anlik": -12.4,
       "tepe": 5827.5
     },
     {
@@ -72,41 +72,41 @@
       "kod": "AHGAZ",
       "giris_tarih": "2026-09-25",
       "giris_fiyat": 44.34,
-      "stop": 38.8,
+      "stop": 38.83,
       "durum": "açık",
-      "guncel": 48.42,
-      "anlik": 9.2,
-      "tepe": 48.5
+      "guncel": 48.54,
+      "anlik": 9.5,
+      "tepe": 48.54
     },
     {
       "kod": "ENERY",
       "giris_tarih": "2026-09-25",
       "giris_fiyat": 13.36,
-      "stop": 11.43,
+      "stop": 11.5,
       "durum": "açık",
-      "guncel": 14.28,
-      "anlik": 6.9,
-      "tepe": 14.29
+      "guncel": 14.37,
+      "anlik": 7.6,
+      "tepe": 14.37
     },
     {
       "kod": "ISDMR",
       "giris_tarih": "2026-09-25",
       "giris_fiyat": 62.5,
-      "stop": 52.8,
+      "stop": 52.84,
       "durum": "açık",
-      "guncel": 65.9,
-      "anlik": 5.4,
-      "tepe": 66.0
+      "guncel": 66.05,
+      "anlik": 5.7,
+      "tepe": 66.05
     },
     {
       "kod": "SOKM",
       "giris_tarih": "2026-09-25",
       "giris_fiyat": 58.2,
-      "stop": 46.56,
+      "stop": 46.72,
       "durum": "açık",
-      "guncel": 57.9,
-      "anlik": -0.5,
-      "tepe": 58.2
+      "guncel": 58.4,
+      "anlik": 0.3,
+      "tepe": 58.4
     },
     {
       "kod": "TOASO",
@@ -124,8 +124,8 @@
       "giris_fiyat": 429.0,
       "stop": 343.2,
       "durum": "açık",
-      "guncel": 402.5,
-      "anlik": -6.2,
+      "guncel": 404.25,
+      "anlik": -5.8,
       "tepe": 429.0
     }
   ]

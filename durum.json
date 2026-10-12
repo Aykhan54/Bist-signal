@@ -4,17 +4,17 @@
     "AKFIS",
     "CELHA",
     "ENERY",
+    "GLYHO",
     "GMTAS",
     "HRKET",
     "HUNER",
     "INDES",
     "ISDMR",
-    "LMKDC",
-    "METRO",
     "ORGE",
     "OTKAR",
     "RYGYO",
-    "TKFEN"
+    "TKFEN",
+    "TRMET"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -610,7 +610,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1678905,
+  "kap_son": 1678929,
   "tk_gonderilen": {
     "tarih": "2026-10-12",
     "kodlar": []
