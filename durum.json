@@ -8,7 +8,8 @@
     "HRKET",
     "INDES",
     "OTKAR",
-    "RYGYO"
+    "RYGYO",
+    "TRMET"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -298,7 +299,7 @@
     "TRENJ": "SAT",
     "TRGYO": "SAT",
     "TRHOL": "SAT",
-    "TRMET": "SAT",
+    "TRMET": "AL",
     "TSKB": "SAT",
     "TSPOR": "SAT",
     "TTKOM": "SAT",
@@ -342,6 +343,11 @@
   "alarm_tetik": [],
   "on_sinyal": {
     "GLYHO": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-10-12"
+    },
+    "TRMET": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-10-12"
