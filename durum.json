@@ -4,11 +4,10 @@
     "AKFIS",
     "CELHA",
     "ENERY",
-    "ENJSA",
     "GLYHO",
     "HRKET",
+    "HUNER",
     "INDES",
-    "ISDMR",
     "OTKAR",
     "RYGYO"
   ],
@@ -606,7 +605,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1679342,
+  "kap_son": 1679355,
   "tk_gonderilen": {
     "tarih": "2026-10-12",
     "kodlar": []
