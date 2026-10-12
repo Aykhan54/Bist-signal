@@ -9,7 +9,6 @@
     "HUNER",
     "INDES",
     "ISDMR",
-    "METRO",
     "OTKAR",
     "RYGYO"
   ],
@@ -607,7 +606,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1679000,
+  "kap_son": 1679187,
   "tk_gonderilen": {
     "tarih": "2026-10-12",
     "kodlar": []
