@@ -3,6 +3,7 @@
     "AHGAZ",
     "CELHA",
     "ENERY",
+    "ENJSA",
     "GLYHO",
     "GMTAS",
     "HRKET",
@@ -608,7 +609,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1680202,
+  "kap_son": 1680222,
   "tk_gonderilen": {
     "tarih": "2026-10-13",
     "kodlar": []
