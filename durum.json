@@ -10,7 +10,6 @@
     "INDES",
     "METRO",
     "OTKAR",
-    "RYSAS",
     "SOKM",
     "TRMET"
   ],
@@ -58,7 +57,7 @@
     "AYGAZ": "SAT",
     "BAHKM": "SAT",
     "BALSU": "SAT",
-    "BERA": "AL",
+    "BERA": "SAT",
     "BESTE": "SAT",
     "BETAE": "SAT",
     "BIGEN": "SAT",
@@ -158,7 +157,7 @@
     "HDFGS": "SAT",
     "HEDEF": "SAT",
     "HEKTS": "SAT",
-    "HKTM": "SAT",
+    "HKTM": "AL",
     "HLGYO": "SAT",
     "HOROZ": "SAT",
     "HRKET": "AL",
@@ -279,7 +278,7 @@
     "SMRVA": "SAT",
     "SNGYO": "SAT",
     "SOHOE": "SAT",
-    "SOKM": "SAT",
+    "SOKM": "AL",
     "SSAAT": "SAT",
     "SUNTK": "SAT",
     "SURGY": "SAT",
@@ -344,7 +343,23 @@
     "65383a7e57f8ef8e"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {},
+  "on_sinyal": {
+    "BERA": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-10-13"
+    },
+    "HKTM": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-10-13"
+    },
+    "SOKM": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-10-13"
+    }
+  },
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -608,7 +623,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1680622,
+  "kap_son": 1680838,
   "tk_gonderilen": {
     "tarih": "2026-10-13",
     "kodlar": []
