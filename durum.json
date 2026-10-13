@@ -6,11 +6,10 @@
     "GLYHO",
     "HRKET",
     "INDES",
+    "METRO",
     "OTKAR",
-    "RYSAS",
     "SOKM",
-    "TRMET",
-    "YKBNK"
+    "TRMET"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -606,7 +605,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1680388,
+  "kap_son": 1680452,
   "tk_gonderilen": {
     "tarih": "2026-10-13",
     "kodlar": []
