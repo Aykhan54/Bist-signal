@@ -8,12 +8,12 @@
     "HRKET",
     "INDES",
     "MAVI",
-    "METRO",
     "OTKAR",
     "RYGYO",
     "RYSAS",
     "SOKM",
     "TRMET",
+    "TUPRS",
     "YKBNK"
   ],
   "son": {
@@ -646,7 +646,10 @@
   },
   "gunici": {
     "tarih": "2026-10-13",
-    "g": []
+    "g": [
+      "33df45ad6788035c",
+      "75398026bb2cb6d2"
+    ]
   },
   "sabah_tarih": "2026-10-13"
 }
