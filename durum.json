@@ -10,6 +10,7 @@
     "MAVI",
     "METRO",
     "OTKAR",
+    "RYGYO",
     "SOKM",
     "TRMET",
     "YKBNK"
@@ -608,7 +609,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1679950,
+  "kap_son": 1680202,
   "tk_gonderilen": {
     "tarih": "2026-10-13",
     "kodlar": []
