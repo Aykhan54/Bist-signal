@@ -6,10 +6,7 @@
     "GLYHO",
     "HRKET",
     "INDES",
-    "MAVI",
-    "METRO",
     "OTKAR",
-    "RYGYO",
     "RYSAS",
     "SOKM",
     "TRMET",
@@ -609,7 +606,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1680373,
+  "kap_son": 1680388,
   "tk_gonderilen": {
     "tarih": "2026-10-13",
     "kodlar": []
