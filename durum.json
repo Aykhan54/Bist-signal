@@ -7,9 +7,13 @@
     "GMTAS",
     "HRKET",
     "INDES",
+    "MAVI",
+    "METRO",
     "OTKAR",
+    "RYGYO",
     "SOKM",
-    "TRMET"
+    "TRMET",
+    "YKBNK"
   ],
   "son": {
     "A1CAP": "SAT",
