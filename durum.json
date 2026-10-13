@@ -8,9 +8,9 @@
     "HKTM",
     "HRKET",
     "INDES",
+    "ORGE",
     "OTKAR",
-    "SOKM",
-    "TRMET"
+    "SOKM"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -225,7 +225,7 @@
     "MOGAN": "SAT",
     "MOPAS": "SAT",
     "MPARK": "SAT",
-    "MRGYO": "AL",
+    "MRGYO": "SAT",
     "MRSHL": "SAT",
     "NETCD": "SAT",
     "NTHOL": "SAT",
@@ -336,34 +336,13 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-10-12",
+  "ozet_tarih": "2026-10-13",
   "hafta_tarih": "2026-10-09",
   "karar_kirilim_g": [
     "65383a7e57f8ef8e"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "BERA": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-13"
-    },
-    "HKTM": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-13"
-    },
-    "MRGYO": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-13"
-    },
-    "SOKM": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-13"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -547,7 +526,7 @@
     "MOBTL": "SAT",
     "MOGAN": "SAT",
     "MOPAS": "SAT",
-    "MPARK": "AL",
+    "MPARK": "SAT",
     "MRGYO": "SAT",
     "MRSHL": "SAT",
     "NTHOL": "SAT",
@@ -566,7 +545,7 @@
     "PCILT": "AL",
     "PEKGY": "SAT",
     "PENTA": "SAT",
-    "PETKM": "SAT",
+    "PETKM": "AL",
     "PGSUS": "SAT",
     "PKART": "SAT",
     "PRZMA": "SAT",
@@ -627,7 +606,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1681028,
+  "kap_son": 1681083,
   "tk_gonderilen": {
     "tarih": "2026-10-13",
     "kodlar": []
