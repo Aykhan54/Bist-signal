@@ -5,13 +5,11 @@
     "ENERY",
     "GLYHO",
     "GMTAS",
-    "HKTM",
     "HRKET",
     "INDES",
-    "METRO",
+    "MRGYO",
     "OTKAR",
-    "SOKM",
-    "TRMET"
+    "SOKM"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -226,7 +224,7 @@
     "MOGAN": "SAT",
     "MOPAS": "SAT",
     "MPARK": "SAT",
-    "MRGYO": "SAT",
+    "MRGYO": "AL",
     "MRSHL": "SAT",
     "NETCD": "SAT",
     "NTHOL": "SAT",
@@ -350,6 +348,11 @@
       "tarih": "2026-10-13"
     },
     "HKTM": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-10-13"
+    },
+    "MRGYO": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-10-13"
