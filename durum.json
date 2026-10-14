@@ -8,6 +8,7 @@
     "HRKET",
     "INDES",
     "METRO",
+    "ORGE",
     "OTKAR",
     "RYGYO",
     "TUPRS"
@@ -292,7 +293,7 @@
     "TERA": "SAT",
     "TGSAS": "SAT",
     "THYAO": "SAT",
-    "TKFEN": "AL",
+    "TKFEN": "SAT",
     "TMPOL": "SAT",
     "TNZTP": "SAT",
     "TOASO": "SAT",
@@ -342,7 +343,13 @@
     "65383a7e57f8ef8e"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {},
+  "on_sinyal": {
+    "TKFEN": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-10-14"
+    }
+  },
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
