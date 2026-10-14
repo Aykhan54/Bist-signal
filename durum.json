@@ -6,11 +6,9 @@
     "GMTAS",
     "HRKET",
     "INDES",
-    "MRGYO",
-    "ORGE",
+    "METRO",
     "OTKAR",
-    "RYGYO",
-    "TUPRS"
+    "RYGYO"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -606,7 +604,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1681389,
+  "kap_son": 1681454,
   "tk_gonderilen": {
     "tarih": "2026-10-14",
     "kodlar": []
