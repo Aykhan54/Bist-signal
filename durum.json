@@ -11,7 +11,8 @@
     "OTKAR",
     "RYGYO",
     "RYSAS",
-    "TUPRS"
+    "TUPRS",
+    "TUREX"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -607,7 +608,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1681807,
+  "kap_son": 1681873,
   "tk_gonderilen": {
     "tarih": "2026-10-14",
     "kodlar": []
