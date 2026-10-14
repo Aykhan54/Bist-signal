@@ -8,6 +8,7 @@
     "HRKET",
     "INDES",
     "ORGE",
+    "OTKAR",
     "RYGYO",
     "RYSAS",
     "TUPRS"
@@ -213,7 +214,7 @@
     "MAGEN": "SAT",
     "MANAS": "SAT",
     "MARTI": "SAT",
-    "MAVI": "AL",
+    "MAVI": "SAT",
     "MCARD": "SAT",
     "MEGMT": "SAT",
     "MERCN": "SAT",
@@ -336,24 +337,13 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-10-13",
+  "ozet_tarih": "2026-10-14",
   "hafta_tarih": "2026-10-09",
   "karar_kirilim_g": [
     "65383a7e57f8ef8e"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "RYSAS": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-14"
-    },
-    "TKFEN": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-14"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -362,7 +352,7 @@
     "AGHOL": "AL",
     "AHGAZ": "AL",
     "AKBNK": "SAT",
-    "AKCNS": "AL",
+    "AKCNS": "SAT",
     "AKENR": "SAT",
     "AKFIS": "AL",
     "AKFYE": "AL",
@@ -617,7 +607,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1682261,
+  "kap_son": 1682294,
   "tk_gonderilen": {
     "tarih": "2026-10-14",
     "kodlar": []
