@@ -7,9 +7,7 @@
     "GMTAS",
     "HRKET",
     "INDES",
-    "METRO",
     "ORGE",
-    "OTKAR",
     "RYGYO",
     "RYSAS",
     "TUPRS"
@@ -619,7 +617,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1681967,
+  "kap_son": 1682261,
   "tk_gonderilen": {
     "tarih": "2026-10-14",
     "kodlar": []
