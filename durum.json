@@ -7,10 +7,9 @@
     "GMTAS",
     "HRKET",
     "INDES",
+    "METRO",
     "RYGYO",
-    "RYSAS",
-    "TUPRS",
-    "YKBNK"
+    "TUPRS"
   ],
   "son": {
     "A1CAP": "SAT",
