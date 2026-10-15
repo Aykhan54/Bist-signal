@@ -8,7 +8,6 @@
     "HRKET",
     "INDES",
     "ORGE",
-    "OTKAR",
     "RYGYO",
     "RYSAS",
     "TUPRS"
@@ -607,9 +606,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1682385,
+  "kap_son": 1682467,
   "tk_gonderilen": {
-    "tarih": "2026-10-14",
+    "tarih": "2026-10-15",
     "kodlar": []
   },
   "mom_ay": {
@@ -642,8 +641,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-10-14",
+    "tarih": "2026-10-15",
     "g": []
   },
-  "sabah_tarih": "2026-10-14"
+  "sabah_tarih": "2026-10-15"
 }
