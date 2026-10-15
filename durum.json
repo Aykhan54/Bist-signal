@@ -1,12 +1,13 @@
 {
   "al": [
+    "ALARK",
     "CELHA",
     "GLYHO",
     "GMTAS",
     "HRKET",
     "INDES",
-    "RYSAS",
-    "TAVHL"
+    "METRO",
+    "RYSAS"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -638,7 +639,11 @@
   },
   "gunici": {
     "tarih": "2026-10-15",
-    "g": []
+    "g": [
+      "243d4cefd9ee2302",
+      "50c34efbe203cd71",
+      "733d8d44fae802ff"
+    ]
   },
   "sabah_tarih": "2026-10-15"
 }
