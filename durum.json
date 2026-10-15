@@ -1,11 +1,13 @@
 {
   "al": [
-    "AHGAZ",
     "CELHA",
     "GLYHO",
     "GMTAS",
+    "HKTM",
     "HRKET",
-    "INDES"
+    "INDES",
+    "METRO",
+    "RYSAS"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -317,7 +319,7 @@
     "VSNMD": "SAT",
     "YEOTK": "SAT",
     "YIGIT": "SAT",
-    "YKBNK": "AL",
+    "YKBNK": "SAT",
     "ZERGY": "SAT",
     "ZGYO": "SAT",
     "ZOREN": "SAT"
@@ -331,29 +333,14 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-10-14",
+  "ozet_tarih": "2026-10-15",
   "hafta_tarih": "2026-10-09",
   "karar_kirilim_g": [
-    "65383a7e57f8ef8e"
+    "65383a7e57f8ef8e",
+    "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "LMKDC": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-15"
-    },
-    "TRMET": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-15"
-    },
-    "YKBNK": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-15"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -472,7 +459,7 @@
     "GUNDG": "SAT",
     "GWIND": "SAT",
     "GZNMI": "SAT",
-    "HALKB": "SAT",
+    "HALKB": "AL",
     "HATSN": "SAT",
     "HDFGS": "SAT",
     "HEDEF": "SAT",
@@ -617,7 +604,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1682737,
+  "kap_son": 1682761,
   "tk_gonderilen": {
     "tarih": "2026-10-15",
     "kodlar": []
