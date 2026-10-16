@@ -1,9 +1,7 @@
 {
   "al": [
-    "GMTAS",
     "HRKET",
-    "INDES",
-    "MARTI"
+    "INDES"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -636,7 +634,11 @@
   },
   "gunici": {
     "tarih": "2026-10-16",
-    "g": []
+    "g": [
+      "044e268838c2714f",
+      "0b7cd426f70f9434",
+      "de8efedaa8eec3d5"
+    ]
   },
   "sabah_tarih": "2026-10-16"
 }

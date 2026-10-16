@@ -6,7 +6,7 @@
       "giris_fiyat": 34.38,
       "stop": 27.5,
       "durum": "açık",
-      "guncel": 30.96,
+      "guncel": 30.98,
       "anlik": -9.9,
       "tepe": 34.38
     },
@@ -30,8 +30,8 @@
       "giris_fiyat": 411.5,
       "stop": 329.2,
       "durum": "açık",
-      "guncel": 380.75,
-      "anlik": -7.5,
+      "guncel": 378.5,
+      "anlik": -8.0,
       "tepe": 411.5
     },
     {
@@ -40,8 +40,8 @@
       "giris_fiyat": 46.2,
       "stop": 38.06,
       "durum": "açık",
-      "guncel": 41.96,
-      "anlik": -9.2,
+      "guncel": 41.56,
+      "anlik": -10.0,
       "tepe": 47.58
     },
     {
@@ -49,10 +49,14 @@
       "giris_tarih": "2026-09-25",
       "giris_fiyat": 5827.5,
       "stop": 4662.0,
-      "durum": "açık",
-      "guncel": 4667.5,
-      "anlik": -19.9,
-      "tepe": 5827.5
+      "durum": "kapalı",
+      "guncel": 4567.5,
+      "anlik": -21.6,
+      "tepe": 5827.5,
+      "cikis_tarih": "2026-10-16",
+      "cikis_fiyat": 4567.5,
+      "sonuc": -21.6,
+      "sebep": "iz stop"
     },
     {
       "kod": "TUKAS",
@@ -74,8 +78,8 @@
       "giris_fiyat": 44.34,
       "stop": 39.15,
       "durum": "açık",
-      "guncel": 47.6,
-      "anlik": 7.4,
+      "guncel": 46.78,
+      "anlik": 5.5,
       "tepe": 48.94
     },
     {
@@ -84,8 +88,8 @@
       "giris_fiyat": 13.36,
       "stop": 11.78,
       "durum": "açık",
-      "guncel": 14.33,
-      "anlik": 7.3,
+      "guncel": 14.19,
+      "anlik": 6.2,
       "tepe": 14.73
     },
     {
@@ -94,8 +98,8 @@
       "giris_fiyat": 62.5,
       "stop": 52.84,
       "durum": "açık",
-      "guncel": 60.2,
-      "anlik": -3.7,
+      "guncel": 59.65,
+      "anlik": -4.6,
       "tepe": 66.05
     },
     {
@@ -104,8 +108,8 @@
       "giris_fiyat": 58.2,
       "stop": 47.84,
       "durum": "açık",
-      "guncel": 57.4,
-      "anlik": -1.4,
+      "guncel": 57.1,
+      "anlik": -1.9,
       "tepe": 59.8
     },
     {
@@ -114,8 +118,8 @@
       "giris_fiyat": 290.25,
       "stop": 232.2,
       "durum": "açık",
-      "guncel": 241.9,
-      "anlik": -16.7,
+      "guncel": 240.6,
+      "anlik": -17.1,
       "tepe": 290.25
     },
     {
@@ -124,8 +128,8 @@
       "giris_fiyat": 429.0,
       "stop": 343.2,
       "durum": "açık",
-      "guncel": 395.5,
-      "anlik": -7.8,
+      "guncel": 389.5,
+      "anlik": -9.2,
       "tepe": 429.0
     }
   ]
