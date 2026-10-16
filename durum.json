@@ -330,36 +330,21 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-10-15",
-  "hafta_tarih": "2026-10-09",
+  "ozet_tarih": "2026-10-16",
+  "hafta_tarih": "2026-10-16",
   "karar_kirilim_g": [
+    "633cb950a2a42426",
     "65383a7e57f8ef8e",
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "AKCNS": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-16"
-    },
-    "AKFIS": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-16"
-    },
-    "TAVHL": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-16"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
     "ADESE": "SAT",
     "AEFES": "SAT",
-    "AGHOL": "AL",
+    "AGHOL": "SAT",
     "AHGAZ": "AL",
     "AKBNK": "SAT",
     "AKCNS": "SAT",
@@ -589,7 +574,7 @@
     "TATEN": "SAT",
     "TAVHL": "SAT",
     "TCELL": "SAT",
-    "TCKRC": "AL",
+    "TCKRC": "SAT",
     "TEHOL": "SAT",
     "TERA": "SAT",
     "TGSAS": "SAT",
@@ -602,7 +587,7 @@
     "TRENJ": "SAT",
     "TRGYO": "AL",
     "TRHOL": "SAT",
-    "TRMET": "AL",
+    "TRMET": "SAT",
     "TSKB": "SAT",
     "TTKOM": "SAT",
     "TUKAS": "SAT",
@@ -617,7 +602,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1683282,
+  "kap_son": 1683310,
   "tk_gonderilen": {
     "tarih": "2026-10-16",
     "kodlar": []
