@@ -2,10 +2,8 @@
   "al": [
     "GLYHO",
     "GMTAS",
-    "HKTM",
     "HRKET",
-    "INDES",
-    "MIATK"
+    "INDES"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -602,7 +600,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1682859,
+  "kap_son": 1682993,
   "tk_gonderilen": {
     "tarih": "2026-10-16",
     "kodlar": []
@@ -641,6 +639,9 @@
     "g": [
       "044e268838c2714f",
       "0b7cd426f70f9434",
+      "8b9127c5235837f5",
+      "986199ecab7ab08f",
+      "a2de71dd1fb3a817",
       "de8efedaa8eec3d5",
       "e639d938f0564690"
     ]
