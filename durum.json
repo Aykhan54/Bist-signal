@@ -229,7 +229,7 @@
     "OFSYM": "SAT",
     "ONCSM": "SAT",
     "ONRYT": "SAT",
-    "ORGE": "SAT",
+    "ORGE": "AL",
     "ORZAX": "SAT",
     "OTKAR": "SAT",
     "OYAKC": "SAT",
@@ -330,51 +330,17 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-10-16",
+  "ozet_tarih": "2026-10-19",
   "hafta_tarih": "2026-10-16",
   "karar_kirilim_g": [
+    "1806677e3ae8afae",
+    "41dca80e0e7ffce8",
     "633cb950a2a42426",
     "65383a7e57f8ef8e",
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "CELHA": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-19"
-    },
-    "LOGO": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-19"
-    },
-    "ORGE": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-19"
-    },
-    "OTKAR": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-19"
-    },
-    "TAVHL": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-19"
-    },
-    "TUPRS": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-19"
-    },
-    "TUREX": {
-      "sinyal": "SAT",
-      "onceki": "NÖTR",
-      "tarih": "2026-10-19"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -431,7 +397,7 @@
     "BVSAN": "SAT",
     "CANTE": "SAT",
     "CATES": "SAT",
-    "CCOLA": "AL",
+    "CCOLA": "SAT",
     "CELHA": "AL",
     "CEMZY": "SAT",
     "CGCAM": "SAT",
@@ -534,7 +500,7 @@
     "KOCMT": "SAT",
     "KOPOL": "SAT",
     "KORDS": "SAT",
-    "KRDMA": "AL",
+    "KRDMA": "SAT",
     "KRDMB": "SAT",
     "KRDMD": "AL",
     "KTLEV": "SAT",
@@ -577,7 +543,7 @@
     "PCILT": "AL",
     "PEKGY": "SAT",
     "PENTA": "SAT",
-    "PETKM": "AL",
+    "PETKM": "SAT",
     "PGSUS": "SAT",
     "PKART": "SAT",
     "PRZMA": "SAT",
@@ -621,7 +587,7 @@
     "TOASO": "SAT",
     "TRALT": "SAT",
     "TRENJ": "SAT",
-    "TRGYO": "AL",
+    "TRGYO": "SAT",
     "TRHOL": "SAT",
     "TRMET": "SAT",
     "TSKB": "SAT",
@@ -632,13 +598,13 @@
     "ULKER": "SAT",
     "ULUSE": "SAT",
     "ULUUN": "SAT",
-    "VAKBN": "AL",
+    "VAKBN": "SAT",
     "VBTYZ": "SAT",
     "YEOTK": "SAT",
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1684083,
+  "kap_son": 1684123,
   "tk_gonderilen": {
     "tarih": "2026-10-19",
     "kodlar": []
