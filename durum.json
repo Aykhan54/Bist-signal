@@ -4,7 +4,8 @@
     "GMTAS",
     "HRKET",
     "INDES",
-    "RYSAS"
+    "RYSAS",
+    "TAVHL"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -602,7 +603,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1683437,
+  "kap_son": 1683460,
   "tk_gonderilen": {
     "tarih": "2026-10-19",
     "kodlar": []
@@ -638,7 +639,9 @@
   },
   "gunici": {
     "tarih": "2026-10-19",
-    "g": []
+    "g": [
+      "59559e0403e4cbe4"
+    ]
   },
   "sabah_tarih": "2026-10-19"
 }
