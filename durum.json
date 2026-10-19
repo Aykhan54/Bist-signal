@@ -3,8 +3,7 @@
     "GLYHO",
     "GMTAS",
     "HRKET",
-    "INDES",
-    "TAVHL"
+    "INDES"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -639,7 +638,11 @@
   "gunici": {
     "tarih": "2026-10-19",
     "g": [
-      "59559e0403e4cbe4"
+      "0b850a24a0d8c349",
+      "178f48332c92eda2",
+      "59559e0403e4cbe4",
+      "7d1509ecebb45226",
+      "f5e64453036d3b54"
     ]
   },
   "sabah_tarih": "2026-10-19"
