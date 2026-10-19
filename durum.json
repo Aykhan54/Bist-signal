@@ -1,6 +1,5 @@
 {
   "al": [
-    "ENJSA",
     "GLYHO",
     "GMTAS",
     "INDES",
@@ -603,7 +602,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1683695,
+  "kap_son": 1683734,
   "tk_gonderilen": {
     "tarih": "2026-10-19",
     "kodlar": []
@@ -644,6 +643,7 @@
       "178f48332c92eda2",
       "59559e0403e4cbe4",
       "7d1509ecebb45226",
+      "897f6a6910c1417d",
       "f5e64453036d3b54"
     ]
   },
