@@ -1,5 +1,6 @@
 {
   "al": [
+    "EFOR",
     "GLYHO",
     "GMTAS",
     "TAVHL"
@@ -602,7 +603,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1684254,
+  "kap_son": 1684277,
   "tk_gonderilen": {
     "tarih": "2026-10-20",
     "kodlar": []
@@ -640,6 +641,7 @@
     "tarih": "2026-10-20",
     "g": [
       "59559e0403e4cbe4",
+      "897f6a6910c1417d",
       "f5e64453036d3b54"
     ]
   },
