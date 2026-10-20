@@ -1,9 +1,7 @@
 {
   "al": [
-    "ENJSA",
     "GLYHO",
     "GMTAS",
-    "INDES",
     "TAVHL"
   ],
   "son": {
@@ -641,6 +639,7 @@
   "gunici": {
     "tarih": "2026-10-20",
     "g": [
+      "59559e0403e4cbe4",
       "f5e64453036d3b54"
     ]
   },
