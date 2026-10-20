@@ -1,9 +1,9 @@
 {
   "al": [
+    "ENJSA",
     "GLYHO",
     "GMTAS",
-    "HRKET",
-    "SOKM",
+    "INDES",
     "TAVHL"
   ],
   "son": {
@@ -604,7 +604,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1684229,
+  "kap_son": 1684254,
   "tk_gonderilen": {
     "tarih": "2026-10-20",
     "kodlar": []
@@ -640,7 +640,9 @@
   },
   "gunici": {
     "tarih": "2026-10-20",
-    "g": []
+    "g": [
+      "f5e64453036d3b54"
+    ]
   },
   "sabah_tarih": "2026-10-20"
 }
