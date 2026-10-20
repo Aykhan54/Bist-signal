@@ -1,12 +1,12 @@
 {
   "al": [
     "AHGAZ",
-    "EFOR",
     "ENERY",
     "GLYHO",
     "GMTAS",
     "HRKET",
     "INDES",
+    "SOKM",
     "TAVHL"
   ],
   "son": {
@@ -607,7 +607,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1684450,
+  "kap_son": 1684462,
   "tk_gonderilen": {
     "tarih": "2026-10-20",
     "kodlar": []
