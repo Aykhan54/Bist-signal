@@ -7,7 +7,6 @@
     "GMTAS",
     "INDES",
     "RYGYO",
-    "SOKM",
     "TAVHL"
   ],
   "son": {
@@ -610,7 +609,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1684744,
+  "kap_son": 1684747,
   "tk_gonderilen": {
     "tarih": "2026-10-21",
     "kodlar": []
