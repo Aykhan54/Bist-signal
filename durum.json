@@ -2,6 +2,7 @@
   "al": [
     "EFOR",
     "GMTAS",
+    "HRKET",
     "RYGYO",
     "TAVHL"
   ],
@@ -106,7 +107,7 @@
     "EMKEL": "SAT",
     "EMPAE": "SAT",
     "ENDAE": "SAT",
-    "ENERY": "AL",
+    "ENERY": "SAT",
     "ENJSA": "SAT",
     "ENKAI": "SAT",
     "ENPRA": "SAT",
@@ -153,7 +154,7 @@
     "HKTM": "AL",
     "HLGYO": "SAT",
     "HOROZ": "SAT",
-    "HRKET": "SAT",
+    "HRKET": "AL",
     "HUNER": "AL",
     "HURGZ": "SAT",
     "ICUGS": "SAT",
@@ -353,9 +354,14 @@
       "onceki": "SAT",
       "tarih": "2026-10-21"
     },
-    "HRKET": {
+    "ENERY": {
       "sinyal": "SAT",
       "onceki": "AL",
+      "tarih": "2026-10-21"
+    },
+    "HRKET": {
+      "sinyal": "AL",
+      "onceki": "SAT",
       "tarih": "2026-10-21"
     },
     "METEN": {
@@ -632,7 +638,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1685239,
+  "kap_son": 1685318,
   "tk_gonderilen": {
     "tarih": "2026-10-21",
     "kodlar": []
