@@ -3,7 +3,6 @@
     "ENERY",
     "GLYHO",
     "GMTAS",
-    "RYGYO",
     "TAVHL"
   ],
   "son": {
@@ -643,6 +642,7 @@
   "gunici": {
     "tarih": "2026-10-21",
     "g": [
+      "158e5197d0519b15",
       "f5e64453036d3b54"
     ]
   },
