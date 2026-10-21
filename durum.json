@@ -1,6 +1,7 @@
 {
   "al": [
     "BRSAN",
+    "EFOR",
     "ENERY",
     "GLYHO",
     "GMTAS",
@@ -645,7 +646,9 @@
   },
   "gunici": {
     "tarih": "2026-10-21",
-    "g": []
+    "g": [
+      "f5e64453036d3b54"
+    ]
   },
   "sabah_tarih": "2026-10-21"
 }
