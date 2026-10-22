@@ -1,9 +1,6 @@
 {
   "al": [
-    "EFOR",
     "GMTAS",
-    "HRKET",
-    "RYGYO",
     "TAVHL"
   ],
   "son": {
@@ -643,7 +640,9 @@
   },
   "gunici": {
     "tarih": "2026-10-22",
-    "g": []
+    "g": [
+      "f5e64453036d3b54"
+    ]
   },
   "sabah_tarih": "2026-10-22"
 }
