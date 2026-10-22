@@ -1,8 +1,6 @@
 {
   "al": [
     "EFOR",
-    "HRKET",
-    "RYGYO",
     "TAVHL"
   ],
   "son": {
@@ -643,6 +641,9 @@
   "gunici": {
     "tarih": "2026-10-22",
     "g": [
+      "15b143f085f4b6a6",
+      "b89a3d3c49c6c746",
+      "f09fb5658d7cb9cf",
       "f5e64453036d3b54"
     ]
   },
