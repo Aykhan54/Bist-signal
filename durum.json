@@ -1,7 +1,6 @@
 {
   "al": [
     "EFOR",
-    "HRKET",
     "TAVHL"
   ],
   "son": {
@@ -605,7 +604,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1685723,
+  "kap_son": 1685780,
   "tk_gonderilen": {
     "tarih": "2026-10-22",
     "kodlar": []
