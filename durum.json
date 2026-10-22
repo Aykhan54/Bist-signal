@@ -1,6 +1,9 @@
 {
   "al": [
+    "EFOR",
     "GMTAS",
+    "INDES",
+    "RYGYO",
     "TAVHL"
   ],
   "son": {
@@ -604,7 +607,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1685579,
+  "kap_son": 1685623,
   "tk_gonderilen": {
     "tarih": "2026-10-22",
     "kodlar": []
