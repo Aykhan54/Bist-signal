@@ -214,7 +214,7 @@
     "METRO": "AL",
     "MEYSU": "SAT",
     "MGROS": "SAT",
-    "MIATK": "AL",
+    "MIATK": "SAT",
     "MOBTL": "SAT",
     "MOGAN": "SAT",
     "MOPAS": "SAT",
@@ -271,7 +271,7 @@
     "SMRVA": "SAT",
     "SNGYO": "SAT",
     "SOHOE": "SAT",
-    "SOKM": "SAT",
+    "SOKM": "AL",
     "SSAAT": "SAT",
     "SUNTK": "SAT",
     "SURGY": "SAT",
@@ -324,6 +324,7 @@
   "iz_kirilim_g": [
     "0be769a36b9521e4",
     "3590e89d395cee40",
+    "5a7375fcfdb09ce3",
     "793686998e8e543d",
     "7f376159709e58a8",
     "cd982a8877520eeb",
@@ -331,8 +332,8 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-10-22",
-  "hafta_tarih": "2026-10-16",
+  "ozet_tarih": "2026-10-23",
+  "hafta_tarih": "2026-10-23",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
     "41dca80e0e7ffce8",
@@ -342,23 +343,7 @@
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "HKTM": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-23"
-    },
-    "MIATK": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-23"
-    },
-    "SOKM": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-23"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -385,7 +370,7 @@
     "ANELE": "SAT",
     "ANHYT": "SAT",
     "ANSGR": "SAT",
-    "ARDYZ": "AL",
+    "ARDYZ": "SAT",
     "ARMGD": "SAT",
     "ARSAN": "SAT",
     "ASELS": "SAT",
@@ -443,7 +428,7 @@
     "EKGYO": "SAT",
     "EMKEL": "SAT",
     "ENDAE": "SAT",
-    "ENERY": "SAT",
+    "ENERY": "AL",
     "ENJSA": "AL",
     "ENKAI": "SAT",
     "ENSRI": "SAT",
@@ -509,7 +494,7 @@
     "KAYSE": "SAT",
     "KBORU": "SAT",
     "KCAER": "SAT",
-    "KCHOL": "AL",
+    "KCHOL": "SAT",
     "KGYO": "SAT",
     "KLKIM": "SAT",
     "KLRHO": "SAT",
@@ -568,7 +553,7 @@
     "PSGYO": "SAT",
     "QUAGR": "SAT",
     "RALYH": "SAT",
-    "RGYAS": "AL",
+    "RGYAS": "SAT",
     "RTALB": "SAT",
     "RUBNS": "SAT",
     "RYGYO": "AL",
@@ -622,7 +607,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1686937,
+  "kap_son": 1686973,
   "tk_gonderilen": {
     "tarih": "2026-10-23",
     "kodlar": []
