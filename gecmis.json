@@ -6,8 +6,8 @@
       "giris_fiyat": 34.38,
       "stop": 27.5,
       "durum": "açık",
-      "guncel": 28.24,
-      "anlik": -17.9,
+      "guncel": 28.18,
+      "anlik": -18.0,
       "tepe": 34.38
     },
     {
@@ -30,8 +30,8 @@
       "giris_fiyat": 411.5,
       "stop": 329.2,
       "durum": "açık",
-      "guncel": 355.0,
-      "anlik": -13.7,
+      "guncel": 354.0,
+      "anlik": -14.0,
       "tepe": 411.5
     },
     {
@@ -39,10 +39,14 @@
       "giris_tarih": "2026-09-24",
       "giris_fiyat": 46.2,
       "stop": 38.06,
-      "durum": "açık",
-      "guncel": 38.12,
-      "anlik": -17.5,
-      "tepe": 47.58
+      "durum": "kapalı",
+      "guncel": 37.76,
+      "anlik": -18.3,
+      "tepe": 47.58,
+      "cikis_tarih": "2026-10-23",
+      "cikis_fiyat": 37.76,
+      "sonuc": -18.3,
+      "sebep": "iz stop"
     },
     {
       "kod": "EGEEN",
@@ -78,8 +82,8 @@
       "giris_fiyat": 44.34,
       "stop": 39.15,
       "durum": "açık",
-      "guncel": 41.8,
-      "anlik": -5.7,
+      "guncel": 41.92,
+      "anlik": -5.5,
       "tepe": 48.94
     },
     {
@@ -87,10 +91,14 @@
       "giris_tarih": "2026-09-25",
       "giris_fiyat": 13.36,
       "stop": 11.78,
-      "durum": "açık",
-      "guncel": 11.79,
-      "anlik": -11.8,
-      "tepe": 14.73
+      "durum": "kapalı",
+      "guncel": 11.75,
+      "anlik": -12.1,
+      "tepe": 14.73,
+      "cikis_tarih": "2026-10-23",
+      "cikis_fiyat": 11.75,
+      "sonuc": -12.1,
+      "sebep": "iz stop"
     },
     {
       "kod": "ISDMR",
@@ -112,8 +120,8 @@
       "giris_fiyat": 58.2,
       "stop": 47.84,
       "durum": "açık",
-      "guncel": 56.35,
-      "anlik": -3.2,
+      "guncel": 56.0,
+      "anlik": -3.8,
       "tepe": 59.8
     },
     {
@@ -136,8 +144,8 @@
       "giris_fiyat": 429.0,
       "stop": 343.2,
       "durum": "açık",
-      "guncel": 371.0,
-      "anlik": -13.5,
+      "guncel": 370.75,
+      "anlik": -13.6,
       "tepe": 429.0
     }
   ]
