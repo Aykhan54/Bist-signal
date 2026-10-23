@@ -1,5 +1,6 @@
 {
   "al": [
+    "MIATK",
     "RYGYO"
   ],
   "son": {
@@ -214,7 +215,7 @@
     "METRO": "AL",
     "MEYSU": "SAT",
     "MGROS": "SAT",
-    "MIATK": "SAT",
+    "MIATK": "AL",
     "MOBTL": "SAT",
     "MOGAN": "SAT",
     "MOPAS": "SAT",
@@ -346,6 +347,11 @@
     "HKTM": {
       "sinyal": "SAT",
       "onceki": "AL",
+      "tarih": "2026-10-23"
+    },
+    "MIATK": {
+      "sinyal": "AL",
+      "onceki": "SAT",
       "tarih": "2026-10-23"
     },
     "SOKM": {
