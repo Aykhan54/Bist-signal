@@ -5,10 +5,14 @@
       "giris_tarih": "2026-09-24",
       "giris_fiyat": 34.38,
       "stop": 27.5,
-      "durum": "açık",
-      "guncel": 27.88,
-      "anlik": -18.9,
-      "tepe": 34.38
+      "durum": "kapalı",
+      "guncel": 27.48,
+      "anlik": -20.1,
+      "tepe": 34.38,
+      "cikis_tarih": "2026-10-27",
+      "cikis_fiyat": 27.48,
+      "sonuc": -20.1,
+      "sebep": "iz stop"
     },
     {
       "kod": "TKFEN",
@@ -30,8 +34,8 @@
       "giris_fiyat": 411.5,
       "stop": 329.2,
       "durum": "açık",
-      "guncel": 362.5,
-      "anlik": -11.9,
+      "guncel": 361.75,
+      "anlik": -12.1,
       "tepe": 411.5
     },
     {
@@ -82,8 +86,8 @@
       "giris_fiyat": 44.34,
       "stop": 39.15,
       "durum": "açık",
-      "guncel": 45.02,
-      "anlik": 1.5,
+      "guncel": 45.32,
+      "anlik": 2.2,
       "tepe": 48.94
     },
     {
@@ -120,8 +124,8 @@
       "giris_fiyat": 58.2,
       "stop": 47.84,
       "durum": "açık",
-      "guncel": 57.9,
-      "anlik": -0.5,
+      "guncel": 57.85,
+      "anlik": -0.6,
       "tepe": 59.8
     },
     {
@@ -144,8 +148,8 @@
       "giris_fiyat": 429.0,
       "stop": 343.2,
       "durum": "açık",
-      "guncel": 374.5,
-      "anlik": -12.7,
+      "guncel": 373.25,
+      "anlik": -13.0,
       "tepe": 429.0
     }
   ]
