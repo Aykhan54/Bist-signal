@@ -336,7 +336,7 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-10-27",
+  "ozet_tarih": "2026-10-28",
   "hafta_tarih": "2026-10-23",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
@@ -347,18 +347,7 @@
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "METRO": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-10-28"
-    },
-    "RYSAS": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-10-28"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -398,7 +387,7 @@
     "BERA": "SAT",
     "BIGEN": "SAT",
     "BIGTK": "SAT",
-    "BIMAS": "AL",
+    "BIMAS": "SAT",
     "BINHO": "SAT",
     "BIOEN": "SAT",
     "BJKAS": "SAT",
@@ -421,7 +410,7 @@
     "CGCAM": "SAT",
     "CIMSA": "SAT",
     "CRDFA": "SAT",
-    "CRFSA": "AL",
+    "CRFSA": "SAT",
     "CVKMD": "SAT",
     "CWENE": "SAT",
     "DAGI": "SAT",
@@ -484,7 +473,7 @@
     "HKTM": "SAT",
     "HLGYO": "SAT",
     "HOROZ": "SAT",
-    "HRKET": "AL",
+    "HRKET": "SAT",
     "HUNER": "AL",
     "HURGZ": "SAT",
     "ICUGS": "SAT",
