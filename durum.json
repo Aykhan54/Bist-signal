@@ -1,7 +1,6 @@
 {
   "al": [
-    "GMTAS",
-    "RYGYO"
+    "GMTAS"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -649,6 +648,7 @@
     "g": [
       "246f1ea2258b4338",
       "29eca7afcf775b93",
+      "d500f8de6b1ca760",
       "f9a42083ddd578a3"
     ]
   },
