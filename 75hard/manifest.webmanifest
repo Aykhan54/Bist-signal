@@ -1,0 +1,16 @@
+{
+  "name": "75 Hard Takip",
+  "short_name": "75 Hard",
+  "description": "75 gün. Sıfır mazeret. Sıfır telafi.",
+  "lang": "tr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#100d0b",
+  "theme_color": "#100d0b",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
