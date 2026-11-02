@@ -1,5 +1,5 @@
 // 75 Hard — çevrimdışı çalışma: önce internetten dene (güncel kalsın), yoksa önbellekten aç.
-const ONBELLEK = 'h75-v1';
+const ONBELLEK = 'h75-v2';
 const DOSYALAR = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
