@@ -335,7 +335,7 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-11-02",
+  "ozet_tarih": "2026-11-03",
   "hafta_tarih": "2026-10-30",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
@@ -381,7 +381,7 @@
     "ATATP": "AL",
     "AVHOL": "SAT",
     "AYDEM": "SAT",
-    "AYGAZ": "AL",
+    "AYGAZ": "SAT",
     "BAHKM": "AL",
     "BERA": "SAT",
     "BIGEN": "SAT",
@@ -454,7 +454,7 @@
     "GESAN": "SAT",
     "GIPTA": "SAT",
     "GLRMK": "SAT",
-    "GLYHO": "AL",
+    "GLYHO": "SAT",
     "GMTAS": "AL",
     "GOKNR": "SAT",
     "GRSEL": "SAT",
@@ -492,7 +492,7 @@
     "IZMDC": "SAT",
     "KAREL": "SAT",
     "KARSN": "SAT",
-    "KARTN": "SAT",
+    "KARTN": "AL",
     "KATMR": "SAT",
     "KAYSE": "SAT",
     "KBORU": "SAT",
@@ -610,7 +610,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1691831,
+  "kap_son": 1691873,
   "tk_gonderilen": {
     "tarih": "2026-11-03",
     "kodlar": []
