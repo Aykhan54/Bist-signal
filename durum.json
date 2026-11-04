@@ -3,6 +3,7 @@
     "ENJSA",
     "ENTRA",
     "GRSEL",
+    "LMKDC",
     "RYSAS"
   ],
   "son": {
@@ -201,7 +202,7 @@
     "LIDER": "SAT",
     "LILAK": "SAT",
     "LINK": "SAT",
-    "LMKDC": "SAT",
+    "LMKDC": "AL",
     "LOGO": "SAT",
     "LXGYO": "SAT",
     "LYDHO": "SAT",
@@ -337,7 +338,7 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-11-03",
+  "ozet_tarih": "2026-11-04",
   "hafta_tarih": "2026-10-30",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
@@ -348,23 +349,7 @@
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "ENJSA": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-04"
-    },
-    "ENTRA": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-04"
-    },
-    "GRSEL": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-04"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -628,7 +613,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1692525,
+  "kap_son": 1692602,
   "tk_gonderilen": {
     "tarih": "2026-11-04",
     "kodlar": []
