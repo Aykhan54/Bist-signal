@@ -5,7 +5,6 @@
     "ENTRA",
     "GARAN",
     "GRSEL",
-    "HKTM",
     "METRO",
     "OZSUB",
     "RYSAS"
@@ -648,7 +647,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1693193,
+  "kap_son": 1693316,
   "tk_gonderilen": {
     "tarih": "2026-11-05",
     "kodlar": []
