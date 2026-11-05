@@ -154,7 +154,7 @@
     "HDFGS": "SAT",
     "HEDEF": "SAT",
     "HEKTS": "SAT",
-    "HKTM": "AL",
+    "HKTM": "SAT",
     "HLGYO": "SAT",
     "HOROZ": "SAT",
     "HRKET": "SAT",
@@ -287,7 +287,7 @@
     "TABGD": "SAT",
     "TARKM": "SAT",
     "TATEN": "SAT",
-    "TAVHL": "AL",
+    "TAVHL": "SAT",
     "TCELL": "SAT",
     "TCKRC": "SAT",
     "TEHOL": "SAT",
@@ -341,49 +341,19 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-11-04",
+  "ozet_tarih": "2026-11-05",
   "hafta_tarih": "2026-10-30",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
     "41dca80e0e7ffce8",
+    "55a421687c7d5e52",
     "633cb950a2a42426",
     "65383a7e57f8ef8e",
     "712c85573aa82b37",
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "AKHAN": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-05"
-    },
-    "GARAN": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-05"
-    },
-    "HKTM": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-05"
-    },
-    "METRO": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-05"
-    },
-    "OZSUB": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-05"
-    },
-    "TAVHL": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-05"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -491,7 +461,7 @@
     "GESAN": "SAT",
     "GIPTA": "SAT",
     "GLRMK": "SAT",
-    "GLYHO": "SAT",
+    "GLYHO": "AL",
     "GMTAS": "AL",
     "GOKNR": "SAT",
     "GRSEL": "SAT",
@@ -647,7 +617,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1693316,
+  "kap_son": 1693374,
   "tk_gonderilen": {
     "tarih": "2026-11-05",
     "kodlar": []
