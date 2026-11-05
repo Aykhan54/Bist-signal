@@ -3,7 +3,6 @@
     "ENJSA",
     "ENTRA",
     "GRSEL",
-    "LMKDC",
     "RYSAS"
   ],
   "son": {
@@ -613,9 +612,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1692850,
+  "kap_son": 1692923,
   "tk_gonderilen": {
-    "tarih": "2026-11-04",
+    "tarih": "2026-11-05",
     "kodlar": []
   },
   "mom_ay": {
@@ -632,13 +631,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-11-04",
-    "g": [
-      "197ac8d11b85ed6e",
-      "b82d460be9420c27",
-      "bd3723cb65aab43e",
-      "c28d49bcc5fe6a9f"
-    ]
+    "tarih": "2026-11-05",
+    "g": []
   },
-  "sabah_tarih": "2026-11-04"
+  "sabah_tarih": "2026-11-05"
 }
