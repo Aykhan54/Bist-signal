@@ -7,7 +7,8 @@
     "GRSEL",
     "METRO",
     "OZSUB",
-    "RYSAS"
+    "RYSAS",
+    "TAVHL"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -287,7 +288,7 @@
     "TABGD": "SAT",
     "TARKM": "SAT",
     "TATEN": "SAT",
-    "TAVHL": "SAT",
+    "TAVHL": "AL",
     "TCELL": "SAT",
     "TCKRC": "SAT",
     "TEHOL": "SAT",
@@ -369,6 +370,11 @@
       "tarih": "2026-11-05"
     },
     "OZSUB": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-05"
+    },
+    "TAVHL": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-11-05"
@@ -637,7 +643,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1693151,
+  "kap_son": 1693193,
   "tk_gonderilen": {
     "tarih": "2026-11-05",
     "kodlar": []
