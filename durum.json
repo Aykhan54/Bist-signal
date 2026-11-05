@@ -7,7 +7,6 @@
     "GRSEL",
     "HKTM",
     "OZSUB",
-    "RYGYO",
     "RYSAS"
   ],
   "son": {
@@ -617,7 +616,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1693067,
+  "kap_son": 1693070,
   "tk_gonderilen": {
     "tarih": "2026-11-05",
     "kodlar": []
