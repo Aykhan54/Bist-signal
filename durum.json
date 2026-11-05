@@ -1,12 +1,10 @@
 {
   "al": [
     "AKHAN",
-    "BRSAN",
     "ENJSA",
     "ENTRA",
     "GARAN",
     "HKTM",
-    "METRO",
     "OZSUB",
     "RYGYO",
     "RYSAS"
@@ -618,7 +616,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1692957,
+  "kap_son": 1693007,
   "tk_gonderilen": {
     "tarih": "2026-11-05",
     "kodlar": []
