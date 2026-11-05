@@ -5,10 +5,10 @@
     "ENTRA",
     "GARAN",
     "GRSEL",
+    "HKTM",
     "METRO",
     "OZSUB",
-    "RYSAS",
-    "TAVHL"
+    "RYSAS"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -155,7 +155,7 @@
     "HDFGS": "SAT",
     "HEDEF": "SAT",
     "HEKTS": "SAT",
-    "HKTM": "SAT",
+    "HKTM": "AL",
     "HLGYO": "SAT",
     "HOROZ": "SAT",
     "HRKET": "SAT",
@@ -360,6 +360,11 @@
       "tarih": "2026-11-05"
     },
     "GARAN": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-05"
+    },
+    "HKTM": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-11-05"
