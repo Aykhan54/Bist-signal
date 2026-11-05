@@ -4,6 +4,8 @@
     "ENJSA",
     "ENTRA",
     "GARAN",
+    "OZSUB",
+    "RYGYO",
     "RYSAS"
   ],
   "son": {
@@ -613,7 +615,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1692923,
+  "kap_son": 1692957,
   "tk_gonderilen": {
     "tarih": "2026-11-05",
     "kodlar": []
@@ -633,7 +635,10 @@
   },
   "gunici": {
     "tarih": "2026-11-05",
-    "g": []
+    "g": [
+      "659505d0958635ab",
+      "cb5e88535939f3f5"
+    ]
   },
   "sabah_tarih": "2026-11-05"
 }
