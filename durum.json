@@ -1,11 +1,13 @@
 {
   "al": [
+    "AKHAN",
+    "AVHOL",
     "BRSAN",
     "ENJSA",
     "ENTRA",
     "GARAN",
+    "HKTM",
     "OZSUB",
-    "RYGYO",
     "RYSAS"
   ],
   "son": {
@@ -637,6 +639,8 @@
     "tarih": "2026-11-05",
     "g": [
       "659505d0958635ab",
+      "78cf455101c5b6b7",
+      "8ffafedcfd2cde3d",
       "cb5e88535939f3f5"
     ]
   },
