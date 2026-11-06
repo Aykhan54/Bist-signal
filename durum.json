@@ -3,6 +3,7 @@
     "ENJSA",
     "ENTRA",
     "GARAN",
+    "GRSEL",
     "METRO",
     "OZSUB",
     "RYSAS",
@@ -616,7 +617,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1693737,
+  "kap_son": 1693741,
   "tk_gonderilen": {
     "tarih": "2026-11-06",
     "kodlar": []
