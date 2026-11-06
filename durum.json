@@ -7,7 +7,7 @@
     "METRO",
     "RYSAS",
     "TAVHL",
-    "YKBNK"
+    "VAKFA"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -317,7 +317,7 @@
     "ULUUN": "SAT",
     "USAK": "SAT",
     "VAKBN": "SAT",
-    "VAKFA": "SAT",
+    "VAKFA": "AL",
     "VBTYZ": "SAT",
     "VESBE": "SAT",
     "VESTL": "SAT",
@@ -360,6 +360,11 @@
       "tarih": "2026-11-06"
     },
     "TAVHL": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-06"
+    },
+    "VAKFA": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-11-06"
@@ -633,7 +638,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1693947,
+  "kap_son": 1694170,
   "tk_gonderilen": {
     "tarih": "2026-11-06",
     "kodlar": []
