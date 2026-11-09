@@ -1,5 +1,6 @@
 {
   "al": [
+    "CELHA",
     "ENJSA",
     "ENTRA",
     "GARAN",
@@ -635,7 +636,10 @@
   },
   "gunici": {
     "tarih": "2026-11-09",
-    "g": []
+    "g": [
+      "15d65d4bd03c85fc",
+      "53ebebcabc13beb3"
+    ]
   },
   "sabah_tarih": "2026-11-09"
 }
