@@ -3,6 +3,7 @@
     "BRSAN",
     "ENJSA",
     "ENTRA",
+    "FRIGO",
     "GARAN",
     "METRO",
     "RYSAS",
@@ -125,7 +126,7 @@
     "FENER": "SAT",
     "FONET": "SAT",
     "FORTE": "SAT",
-    "FRIGO": "SAT",
+    "FRIGO": "AL",
     "FRMPL": "SAT",
     "FROTO": "SAT",
     "FZLGY": "SAT",
@@ -360,6 +361,11 @@
       "tarih": "2026-11-09"
     },
     "CELHA": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-09"
+    },
+    "FRIGO": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-11-09"
@@ -633,7 +639,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1695191,
+  "kap_son": 1695206,
   "tk_gonderilen": {
     "tarih": "2026-11-09",
     "kodlar": []
