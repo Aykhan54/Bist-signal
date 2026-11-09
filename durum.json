@@ -1,5 +1,6 @@
 {
   "al": [
+    "BRSAN",
     "ENJSA",
     "ENTRA",
     "GARAN",
@@ -615,7 +616,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1694634,
+  "kap_son": 1694738,
   "tk_gonderilen": {
     "tarih": "2026-11-09",
     "kodlar": []
