@@ -340,7 +340,7 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-11-09",
+  "ozet_tarih": "2026-11-10",
   "hafta_tarih": "2026-11-06",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
@@ -352,13 +352,7 @@
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "METEN": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-10"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -622,7 +616,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1696607,
+  "kap_son": 1696640,
   "tk_gonderilen": {
     "tarih": "2026-11-10",
     "kodlar": []
