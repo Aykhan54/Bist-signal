@@ -1,6 +1,5 @@
 {
   "al": [
-    "CELHA",
     "ENJSA",
     "ENTRA",
     "GARAN",
@@ -620,7 +619,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1696810,
+  "kap_son": 1696859,
   "tk_gonderilen": {
     "tarih": "2026-11-11",
     "kodlar": []
@@ -640,7 +639,10 @@
   },
   "gunici": {
     "tarih": "2026-11-11",
-    "g": []
+    "g": [
+      "6810572f8f4f3685",
+      "d8252a6584c63c2c"
+    ]
   },
   "sabah_tarih": "2026-11-11"
 }
