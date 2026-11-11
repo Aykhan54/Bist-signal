@@ -1,5 +1,6 @@
 {
   "al": [
+    "AKSA",
     "ENJSA",
     "ENTRA",
     "GARAN",
@@ -7,6 +8,7 @@
     "HRKET",
     "ISCTR",
     "METEN",
+    "METRO",
     "TAVHL",
     "YKBNK"
   ],
@@ -619,7 +621,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1696859,
+  "kap_son": 1696867,
   "tk_gonderilen": {
     "tarih": "2026-11-11",
     "kodlar": []
