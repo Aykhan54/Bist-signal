@@ -1,6 +1,7 @@
 {
   "al": [
     "AKSA",
+    "CELHA",
     "ENJSA",
     "ENTRA",
     "GARAN",
@@ -620,9 +621,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1697318,
+  "kap_son": 1697412,
   "tk_gonderilen": {
-    "tarih": "2026-11-11",
+    "tarih": "2026-11-12",
     "kodlar": []
   },
   "mom_ay": {
@@ -639,11 +640,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-11-11",
-    "g": [
-      "6810572f8f4f3685",
-      "d8252a6584c63c2c"
-    ]
+    "tarih": "2026-11-12",
+    "g": []
   },
-  "sabah_tarih": "2026-11-11"
+  "sabah_tarih": "2026-11-12"
 }
