@@ -1,11 +1,11 @@
 {
   "al": [
     "AKSA",
-    "ARSAN",
     "CELHA",
     "ENERY",
     "ENJSA",
     "ENTRA",
+    "FONET",
     "GARAN",
     "HKTM",
     "ISCTR",
@@ -626,9 +626,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1697771,
+  "kap_son": 1697824,
   "tk_gonderilen": {
-    "tarih": "2026-11-12",
+    "tarih": "2026-11-13",
     "kodlar": []
   },
   "mom_ay": {
@@ -645,14 +645,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-11-12",
-    "g": [
-      "11ddc6e0821152da",
-      "24fe2400773e766b",
-      "59559e0403e4cbe4",
-      "897f6a6910c1417d",
-      "cdbe5982488fbc8a"
-    ]
+    "tarih": "2026-11-13",
+    "g": []
   },
-  "sabah_tarih": "2026-11-12"
+  "sabah_tarih": "2026-11-13"
 }
