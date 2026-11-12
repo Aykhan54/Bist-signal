@@ -6,11 +6,9 @@
     "ENTRA",
     "FONET",
     "FORTE",
-    "FRIGO",
     "GARAN",
     "HKTM",
     "ISCTR",
-    "MEGMT",
     "METEN",
     "METRO",
     "NETCD",
@@ -629,7 +627,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1697509,
+  "kap_son": 1697524,
   "tk_gonderilen": {
     "tarih": "2026-11-12",
     "kodlar": []
