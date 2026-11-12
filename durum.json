@@ -10,6 +10,7 @@
     "ISCTR",
     "METEN",
     "METRO",
+    "SNGYO",
     "TAVHL",
     "THYAO",
     "VAKFA",
@@ -644,7 +645,9 @@
   },
   "gunici": {
     "tarih": "2026-11-12",
-    "g": []
+    "g": [
+      "59559e0403e4cbe4"
+    ]
   },
   "sabah_tarih": "2026-11-12"
 }
