@@ -4,6 +4,7 @@
     "ENJSA",
     "ENTRA",
     "FONET",
+    "FORTE",
     "GARAN",
     "HKTM",
     "HRKET",
@@ -626,7 +627,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1697450,
+  "kap_son": 1697502,
   "tk_gonderilen": {
     "tarih": "2026-11-12",
     "kodlar": []
