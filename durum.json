@@ -7,12 +7,10 @@
     "FORTE",
     "GARAN",
     "HKTM",
-    "HRKET",
     "ISCTR",
     "METEN",
     "METRO",
     "NETCD",
-    "SNGYO",
     "TAVHL",
     "THYAO",
     "VAKFA",
@@ -627,7 +625,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1697502,
+  "kap_son": 1697509,
   "tk_gonderilen": {
     "tarih": "2026-11-12",
     "kodlar": []
