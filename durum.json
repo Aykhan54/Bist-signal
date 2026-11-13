@@ -1,6 +1,5 @@
 {
   "al": [
-    "AKSA",
     "ARSAN",
     "CELHA",
     "ENERY",
@@ -12,10 +11,10 @@
     "METEN",
     "METRO",
     "MPARK",
+    "NETCD",
     "SNGYO",
     "TAVHL",
     "THYAO",
-    "YEOTK",
     "YKBNK"
   ],
   "son": {
