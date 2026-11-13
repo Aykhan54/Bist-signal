@@ -2,13 +2,12 @@
   "al": [
     "CELHA",
     "CVKMD",
+    "EGEEN",
     "ENERY",
     "ENJSA",
     "ENTRA",
-    "FONET",
     "FROTO",
     "GARAN",
-    "HKTM",
     "ISCTR",
     "METEN",
     "METRO",
@@ -628,7 +627,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1698043,
+  "kap_son": 1698069,
   "tk_gonderilen": {
     "tarih": "2026-11-13",
     "kodlar": []
