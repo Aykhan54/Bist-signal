@@ -1,7 +1,6 @@
 {
   "al": [
     "CELHA",
-    "CVKMD",
     "ENERY",
     "ENJSA",
     "ENTRA",
@@ -628,7 +627,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1697850,
+  "kap_son": 1697925,
   "tk_gonderilen": {
     "tarih": "2026-11-13",
     "kodlar": []
@@ -648,7 +647,9 @@
   },
   "gunici": {
     "tarih": "2026-11-13",
-    "g": []
+    "g": [
+      "59559e0403e4cbe4"
+    ]
   },
   "sabah_tarih": "2026-11-13"
 }
