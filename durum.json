@@ -4,14 +4,12 @@
     "ENERY",
     "ENJSA",
     "ENTRA",
-    "FROTO",
     "GARAN",
     "HKTM",
     "ISCTR",
     "METEN",
     "METRO",
     "MPARK",
-    "NETCD",
     "SNGYO",
     "TAVHL",
     "THYAO",
@@ -628,7 +626,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1697925,
+  "kap_son": 1697929,
   "tk_gonderilen": {
     "tarih": "2026-11-13",
     "kodlar": []
