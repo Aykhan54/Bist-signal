@@ -7,7 +7,6 @@
     "GARAN",
     "HKTM",
     "ISCTR",
-    "MCARD",
     "METEN",
     "METRO",
     "MPARK",
@@ -650,7 +649,10 @@
   "gunici": {
     "tarih": "2026-11-16",
     "g": [
-      "374a201023be9feb"
+      "374a201023be9feb",
+      "48f6740435bf48f4",
+      "5089dce9e2cd7180",
+      "a8f9e7dc937a7c69"
     ]
   },
   "sabah_tarih": "2026-11-16"
