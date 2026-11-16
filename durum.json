@@ -1,12 +1,9 @@
 {
   "al": [
     "CELHA",
-    "EGEEN",
     "ENERY",
     "ENJSA",
     "ENTRA",
-    "FONET",
-    "FROTO",
     "GARAN",
     "HKTM",
     "ISCTR",
@@ -649,7 +646,9 @@
   },
   "gunici": {
     "tarih": "2026-11-16",
-    "g": []
+    "g": [
+      "374a201023be9feb"
+    ]
   },
   "sabah_tarih": "2026-11-16"
 }
