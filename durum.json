@@ -13,7 +13,9 @@
     "METRO",
     "MPARK",
     "NETCD",
+    "ORZAX",
     "PGSUS",
+    "SNGYO",
     "TAVHL",
     "THYAO",
     "VAKFA",
@@ -631,7 +633,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1698269,
+  "kap_son": 1698328,
   "tk_gonderilen": {
     "tarih": "2026-11-16",
     "kodlar": []
