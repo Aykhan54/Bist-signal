@@ -235,7 +235,7 @@
     "MPARK": "AL",
     "MRGYO": "SAT",
     "MRSHL": "SAT",
-    "NETCD": "AL",
+    "NETCD": "SAT",
     "NTHOL": "SAT",
     "OBAMS": "SAT",
     "ODAS": "SAT",
@@ -284,7 +284,7 @@
     "SKBNK": "SAT",
     "SMRTG": "SAT",
     "SMRVA": "SAT",
-    "SNGYO": "AL",
+    "SNGYO": "SAT",
     "SOHOE": "SAT",
     "SOKM": "SAT",
     "SSAAT": "SAT",
@@ -344,13 +344,14 @@
     "5a7375fcfdb09ce3",
     "793686998e8e543d",
     "7f376159709e58a8",
+    "9e7437922bca51aa",
     "b4b467d20f6837bb",
     "cd982a8877520eeb",
     "da91a76f0c5ef94a",
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-11-13",
+  "ozet_tarih": "2026-11-16",
   "hafta_tarih": "2026-11-13",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
@@ -362,23 +363,7 @@
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "NETCD": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-16"
-    },
-    "PGSUS": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-16"
-    },
-    "SNGYO": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-16"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -636,13 +621,13 @@
     "ULKER": "SAT",
     "ULUSE": "SAT",
     "ULUUN": "SAT",
-    "VAKBN": "AL",
+    "VAKBN": "SAT",
     "VBTYZ": "SAT",
     "YEOTK": "SAT",
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1698610,
+  "kap_son": 1698640,
   "tk_gonderilen": {
     "tarih": "2026-11-16",
     "kodlar": []
