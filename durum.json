@@ -3,14 +3,15 @@
     "CELHA",
     "ENERY",
     "ENJSA",
+    "ENTRA",
     "GARAN",
     "HKTM",
     "ISCTR",
     "METEN",
     "METRO",
     "MPARK",
-    "NETCD",
     "PGSUS",
+    "SNGYO",
     "TAVHL",
     "THYAO",
     "YKBNK"
@@ -285,7 +286,7 @@
     "SKBNK": "SAT",
     "SMRTG": "SAT",
     "SMRVA": "SAT",
-    "SNGYO": "SAT",
+    "SNGYO": "AL",
     "SOHOE": "SAT",
     "SOKM": "SAT",
     "SSAAT": "SAT",
@@ -370,6 +371,11 @@
       "tarih": "2026-11-16"
     },
     "PGSUS": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-16"
+    },
+    "SNGYO": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-11-16"
@@ -638,7 +644,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1698548,
+  "kap_son": 1698565,
   "tk_gonderilen": {
     "tarih": "2026-11-16",
     "kodlar": []
