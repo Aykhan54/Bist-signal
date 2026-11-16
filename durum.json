@@ -5,6 +5,8 @@
     "ENERY",
     "ENJSA",
     "ENTRA",
+    "FONET",
+    "FROTO",
     "GARAN",
     "HKTM",
     "ISCTR",
@@ -627,9 +629,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1698209,
+  "kap_son": 1698269,
   "tk_gonderilen": {
-    "tarih": "2026-11-14",
+    "tarih": "2026-11-16",
     "kodlar": []
   },
   "mom_ay": {
@@ -646,8 +648,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-11-14",
+    "tarih": "2026-11-16",
     "g": []
   },
-  "sabah_tarih": "2026-11-13"
+  "sabah_tarih": "2026-11-16"
 }
