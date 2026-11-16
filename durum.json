@@ -3,13 +3,13 @@
     "CELHA",
     "ENERY",
     "ENJSA",
-    "ENTRA",
     "GARAN",
     "HKTM",
     "ISCTR",
     "METEN",
     "METRO",
     "MPARK",
+    "NETCD",
     "PGSUS",
     "TAVHL",
     "THYAO",
@@ -236,7 +236,7 @@
     "MPARK": "AL",
     "MRGYO": "SAT",
     "MRSHL": "SAT",
-    "NETCD": "SAT",
+    "NETCD": "AL",
     "NTHOL": "SAT",
     "OBAMS": "SAT",
     "ODAS": "SAT",
@@ -364,6 +364,11 @@
   ],
   "alarm_tetik": [],
   "on_sinyal": {
+    "NETCD": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-16"
+    },
     "PGSUS": {
       "sinyal": "AL",
       "onceki": "SAT",
@@ -633,7 +638,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1698469,
+  "kap_son": 1698548,
   "tk_gonderilen": {
     "tarih": "2026-11-16",
     "kodlar": []
