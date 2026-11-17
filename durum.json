@@ -6,12 +6,10 @@
     "ENJSA",
     "GARAN",
     "HKTM",
-    "ISCTR",
     "METEN",
     "METRO",
     "MPARK",
     "PGSUS",
-    "SNGYO",
     "TAVHL",
     "THYAO",
     "VAKFA",
@@ -630,7 +628,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1698943,
+  "kap_son": 1698981,
   "tk_gonderilen": {
     "tarih": "2026-11-17",
     "kodlar": []
