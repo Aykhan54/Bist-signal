@@ -14,7 +14,6 @@
     "PGSUS",
     "TAVHL",
     "THYAO",
-    "VAKFA",
     "YKBNK"
   ],
   "son": {
@@ -630,7 +629,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1699094,
+  "kap_son": 1699108,
   "tk_gonderilen": {
     "tarih": "2026-11-17",
     "kodlar": []
