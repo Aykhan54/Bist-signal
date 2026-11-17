@@ -352,7 +352,7 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-11-16",
+  "ozet_tarih": "2026-11-17",
   "hafta_tarih": "2026-11-13",
   "karar_kirilim_g": [
     "1806677e3ae8afae",
@@ -364,13 +364,7 @@
     "a1dbd5eedf2ec1ea"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "BAHKM": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-17"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -496,7 +490,7 @@
     "HKTM": "SAT",
     "HLGYO": "SAT",
     "HOROZ": "SAT",
-    "HRKET": "AL",
+    "HRKET": "SAT",
     "HUNER": "AL",
     "HURGZ": "SAT",
     "ICUGS": "SAT",
@@ -634,7 +628,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1699220,
+  "kap_son": 1699245,
   "tk_gonderilen": {
     "tarih": "2026-11-17",
     "kodlar": []
