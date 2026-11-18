@@ -12,8 +12,7 @@
     "MPARK",
     "PGSUS",
     "TAVHL",
-    "THYAO",
-    "YKBNK"
+    "THYAO"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -628,7 +627,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1699559,
+  "kap_son": 1699762,
   "tk_gonderilen": {
     "tarih": "2026-11-18",
     "kodlar": []
