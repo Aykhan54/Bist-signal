@@ -6,7 +6,6 @@
     "FRIGO",
     "FROTO",
     "GARAN",
-    "HKTM",
     "METEN",
     "METRO",
     "MPARK",
@@ -627,7 +626,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1699762,
+  "kap_son": 1699782,
   "tk_gonderilen": {
     "tarih": "2026-11-18",
     "kodlar": []
@@ -647,7 +646,11 @@
   },
   "gunici": {
     "tarih": "2026-11-18",
-    "g": []
+    "g": [
+      "3ddce50a5be30dd8",
+      "4d19ee390e1e55e5",
+      "885ce168eede3a0e"
+    ]
   },
   "sabah_tarih": "2026-11-18"
 }
