@@ -12,12 +12,10 @@
     "OTKAR",
     "PGSUS",
     "PKART",
-    "SAYAS",
     "TAVHL",
     "TCKRC",
     "THYAO",
-    "VAKBN",
-    "VESBE"
+    "VAKBN"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -655,7 +653,10 @@
     "tarih": "2026-11-19",
     "g": [
       "24fe2400773e766b",
-      "774f2d75ebf8e846"
+      "288f60e9422a6930",
+      "3509a784b4bc7595",
+      "774f2d75ebf8e846",
+      "8b3778e17857d919"
     ]
   },
   "sabah_tarih": "2026-11-19"
