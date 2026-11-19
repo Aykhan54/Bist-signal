@@ -627,9 +627,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700013,
+  "kap_son": 1700120,
   "tk_gonderilen": {
-    "tarih": "2026-11-18",
+    "tarih": "2026-11-19",
     "kodlar": []
   },
   "mom_ay": {
@@ -646,18 +646,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-11-18",
-    "g": [
-      "3ddce50a5be30dd8",
-      "4d19ee390e1e55e5",
-      "50885b635914d626",
-      "6020d16c8c5dff1f",
-      "885ce168eede3a0e",
-      "ae85308b4793d08d",
-      "ba365cab5fc430e3",
-      "d92f1f385573840f",
-      "fc52014b2d1f7c36"
-    ]
+    "tarih": "2026-11-19",
+    "g": []
   },
-  "sabah_tarih": "2026-11-18"
+  "sabah_tarih": "2026-11-19"
 }
