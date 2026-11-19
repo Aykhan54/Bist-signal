@@ -2,7 +2,6 @@
   "al": [
     "BAHKM",
     "CELHA",
-    "EGEEN",
     "ENERY",
     "FRIGO",
     "FROTO",
@@ -13,7 +12,7 @@
     "MPARK",
     "OTKAR",
     "PGSUS",
-    "SAYAS",
+    "PKART",
     "TAVHL",
     "TCKRC",
     "THYAO",
@@ -633,7 +632,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700256,
+  "kap_son": 1700262,
   "tk_gonderilen": {
     "tarih": "2026-11-19",
     "kodlar": []
