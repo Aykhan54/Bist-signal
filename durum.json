@@ -3,15 +3,19 @@
     "BAHKM",
     "CELHA",
     "ENERY",
+    "ENTRA",
     "FRIGO",
     "FROTO",
     "GARAN",
     "METEN",
     "METRO",
     "MPARK",
+    "OTKAR",
     "PGSUS",
     "TAVHL",
-    "THYAO"
+    "THYAO",
+    "VAKBN",
+    "YEOTK"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -627,7 +631,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700120,
+  "kap_son": 1700131,
   "tk_gonderilen": {
     "tarih": "2026-11-19",
     "kodlar": []
