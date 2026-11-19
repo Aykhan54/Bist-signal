@@ -12,11 +12,11 @@
     "OTKAR",
     "PGSUS",
     "PKART",
+    "SAYAS",
     "TAVHL",
     "TCKRC",
     "THYAO",
-    "VAKBN",
-    "YKBNK"
+    "VAKBN"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -280,7 +280,7 @@
     "SARAE": "SAT",
     "SARKY": "SAT",
     "SASA": "SAT",
-    "SAYAS": "SAT",
+    "SAYAS": "AL",
     "SDTTR": "SAT",
     "SEGMN": "SAT",
     "SELEC": "SAT",
@@ -380,6 +380,11 @@
       "tarih": "2026-11-19"
     },
     "PKART": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-19"
+    },
+    "SAYAS": {
       "sinyal": "AL",
       "onceki": "SAT",
       "tarih": "2026-11-19"
