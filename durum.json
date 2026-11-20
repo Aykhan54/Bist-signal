@@ -2,14 +2,15 @@
   "al": [
     "BAHKM",
     "CELHA",
+    "EGGUB",
     "ENERY",
+    "FRIGO",
     "HKTM",
     "METRO",
     "MPARK",
     "ORZAX",
     "PGSUS",
-    "THYAO",
-    "VAKBN"
+    "THYAO"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -106,7 +107,7 @@
     "EGEEN": "AL",
     "EGEGY": "SAT",
     "EGEPO": "SAT",
-    "EGGUB": "SAT",
+    "EGGUB": "AL",
     "EKDMR": "SAT",
     "EKGYO": "SAT",
     "EKIM": "SAT",
@@ -362,6 +363,11 @@
   ],
   "alarm_tetik": [],
   "on_sinyal": {
+    "EGGUB": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-20"
+    },
     "ORZAX": {
       "sinyal": "AL",
       "onceki": "SAT",
@@ -636,7 +642,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700743,
+  "kap_son": 1700752,
   "tk_gonderilen": {
     "tarih": "2026-11-20",
     "kodlar": []
