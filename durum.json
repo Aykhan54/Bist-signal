@@ -2,13 +2,16 @@
   "al": [
     "BAHKM",
     "CELHA",
+    "EGGUB",
     "ENERY",
     "FRIGO",
     "HKTM",
     "METRO",
     "MPARK",
     "PGSUS",
-    "THYAO"
+    "THYAO",
+    "VAKBN",
+    "ZGYO"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -331,7 +334,7 @@
     "YIGIT": "SAT",
     "YKBNK": "AL",
     "ZERGY": "SAT",
-    "ZGYO": "SAT",
+    "ZGYO": "AL",
     "ZOREN": "SAT"
   },
   "iz_kirilim_g": [
@@ -374,6 +377,11 @@
     "OZSUB": {
       "sinyal": "SAT",
       "onceki": "AL",
+      "tarih": "2026-11-20"
+    },
+    "ZGYO": {
+      "sinyal": "AL",
+      "onceki": "SAT",
       "tarih": "2026-11-20"
     }
   },
@@ -640,7 +648,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700752,
+  "kap_son": 1700801,
   "tk_gonderilen": {
     "tarih": "2026-11-20",
     "kodlar": []
