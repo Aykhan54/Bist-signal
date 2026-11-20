@@ -3,12 +3,15 @@
     "BAHKM",
     "CELHA",
     "ENERY",
+    "ENTRA",
     "HKTM",
     "METRO",
     "MPARK",
-    "OTKAR",
     "PGSUS",
-    "THYAO"
+    "PKART",
+    "SAYAS",
+    "THYAO",
+    "VAKBN"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -624,7 +627,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700495,
+  "kap_son": 1700588,
   "tk_gonderilen": {
     "tarih": "2026-11-20",
     "kodlar": []
