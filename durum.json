@@ -4,6 +4,7 @@
     "CELHA",
     "EGGUB",
     "ENERY",
+    "FRIGO",
     "HKTM",
     "METRO",
     "MPARK",
@@ -625,7 +626,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700660,
+  "kap_son": 1700673,
   "tk_gonderilen": {
     "tarih": "2026-11-20",
     "kodlar": []
