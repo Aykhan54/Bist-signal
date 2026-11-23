@@ -10,7 +10,8 @@
     "MPARK",
     "PGSUS",
     "THYAO",
-    "VAKBN"
+    "VAKBN",
+    "YEOTK"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -628,7 +629,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1701048,
+  "kap_son": 1701085,
   "tk_gonderilen": {
     "tarih": "2026-11-23",
     "kodlar": []
