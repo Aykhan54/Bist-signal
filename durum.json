@@ -3,12 +3,10 @@
     "AKSA",
     "BAHKM",
     "CELHA",
-    "ENTRA",
     "FRIGO",
     "HKTM",
     "METRO",
     "PGSUS",
-    "SANFM",
     "THYAO"
   ],
   "son": {
@@ -627,7 +625,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1701313,
+  "kap_son": 1701390,
   "tk_gonderilen": {
     "tarih": "2026-11-23",
     "kodlar": []
