@@ -7,7 +7,6 @@
     "FRIGO",
     "HKTM",
     "METRO",
-    "MPARK",
     "PGSUS",
     "SAYAS",
     "THYAO",
@@ -629,7 +628,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1701270,
+  "kap_son": 1701289,
   "tk_gonderilen": {
     "tarih": "2026-11-23",
     "kodlar": []
