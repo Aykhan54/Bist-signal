@@ -1,8 +1,8 @@
 {
   "al": [
-    "AKSA",
     "ALARK",
     "BAHKM",
+    "CCOLA",
     "CELHA",
     "CITAS",
     "EGGUB",
@@ -16,7 +16,8 @@
     "SAYAS",
     "THYAO",
     "VAKBN",
-    "YEOTK"
+    "YEOTK",
+    "ZGYO"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -634,7 +635,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1700986,
+  "kap_son": 1701018,
   "tk_gonderilen": {
     "tarih": "2026-11-23",
     "kodlar": []
@@ -654,7 +655,10 @@
   },
   "gunici": {
     "tarih": "2026-11-23",
-    "g": []
+    "g": [
+      "15d65d4bd03c85fc",
+      "53ebebcabc13beb3"
+    ]
   },
   "sabah_tarih": "2026-11-23"
 }
