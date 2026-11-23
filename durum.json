@@ -12,8 +12,7 @@
     "MPARK",
     "PGSUS",
     "THYAO",
-    "VAKBN",
-    "YEOTK"
+    "VAKBN"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -653,6 +652,7 @@
     "tarih": "2026-11-23",
     "g": [
       "15d65d4bd03c85fc",
+      "276920f6e8b2059f",
       "53ebebcabc13beb3"
     ]
   },
