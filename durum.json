@@ -1,16 +1,20 @@
 {
   "al": [
     "AKSA",
+    "ALARK",
     "BAHKM",
     "CELHA",
     "ENERY",
+    "FRIGO",
     "HKTM",
     "METRO",
     "MPARK",
     "PGSUS",
+    "SAYAS",
     "THYAO",
     "VAKBN",
-    "YEOTK"
+    "YEOTK",
+    "YKBNK"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -628,7 +632,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1701085,
+  "kap_son": 1701110,
   "tk_gonderilen": {
     "tarih": "2026-11-23",
     "kodlar": []
