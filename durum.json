@@ -8,7 +8,6 @@
     "METRO",
     "PGSUS",
     "QUICK",
-    "SANFM",
     "SELEC",
     "THYAO"
   ],
@@ -680,7 +679,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1701933,
+  "kap_son": 1702033,
   "tk_gonderilen": {
     "tarih": "2026-11-24",
     "kodlar": []
