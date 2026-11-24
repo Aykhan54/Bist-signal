@@ -2,7 +2,6 @@
   "al": [
     "BAHKM",
     "CELHA",
-    "ENTRA",
     "FRIGO",
     "HKTM",
     "METRO",
@@ -627,7 +626,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1701829,
+  "kap_son": 1701842,
   "tk_gonderilen": {
     "tarih": "2026-11-24",
     "kodlar": []
