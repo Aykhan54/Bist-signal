@@ -5,13 +5,12 @@
     "BIOEN",
     "BLUME",
     "CELHA",
-    "EGEGY",
     "ENERY",
     "FRIGO",
     "HKTM",
     "METRO",
-    "ORZAX",
     "PGSUS",
+    "SELEC",
     "THYAO",
     "ZGYO"
   ],
@@ -632,7 +631,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1702265,
+  "kap_son": 1702280,
   "tk_gonderilen": {
     "tarih": "2026-11-25",
     "kodlar": []
