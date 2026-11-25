@@ -9,7 +9,8 @@
     "METRO",
     "PENTA",
     "PGSUS",
-    "THYAO"
+    "THYAO",
+    "ZGYO"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -105,7 +106,7 @@
     "EDATA": "SAT",
     "EFOR": "SAT",
     "EGEEN": "SAT",
-    "EGEGY": "AL",
+    "EGEGY": "SAT",
     "EGEPO": "SAT",
     "EGGUB": "AL",
     "EKDMR": "SAT",
@@ -231,7 +232,7 @@
     "MOBTL": "SAT",
     "MOGAN": "SAT",
     "MOPAS": "SAT",
-    "MPARK": "SAT",
+    "MPARK": "AL",
     "MRGYO": "SAT",
     "MRSHL": "SAT",
     "NETCD": "SAT",
@@ -350,7 +351,7 @@
     "ed52d36b8529c244",
     "fc9a269fa7f1b36a"
   ],
-  "ozet_tarih": "2026-11-24",
+  "ozet_tarih": "2026-11-25",
   "hafta_tarih": "2026-11-20",
   "karar_kirilim_g": [
     "067cadbbe044ae48",
@@ -365,63 +366,7 @@
     "bf66dd174394122b"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {
-    "BIOEN": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-25"
-    },
-    "BLUME": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-25"
-    },
-    "EGEEN": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-11-25"
-    },
-    "EGEGY": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-25"
-    },
-    "GARAN": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-11-25"
-    },
-    "MPARK": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-11-25"
-    },
-    "PENTA": {
-      "sinyal": "AL",
-      "onceki": "SAT",
-      "tarih": "2026-11-25"
-    },
-    "RYGYO": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-11-25"
-    },
-    "RYSAS": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-11-25"
-    },
-    "VAKBN": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-11-25"
-    },
-    "YKBNK": {
-      "sinyal": "SAT",
-      "onceki": "AL",
-      "tarih": "2026-11-25"
-    }
-  },
+  "on_sinyal": {},
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -438,7 +383,7 @@
     "AKSA": "SAT",
     "AKSEN": "SAT",
     "AKSUE": "SAT",
-    "ALARK": "AL",
+    "ALARK": "SAT",
     "ALBRK": "SAT",
     "ALCTL": "SAT",
     "ALGYO": "SAT",
@@ -478,7 +423,7 @@
     "BVSAN": "SAT",
     "CANTE": "SAT",
     "CATES": "SAT",
-    "CCOLA": "AL",
+    "CCOLA": "SAT",
     "CELHA": "AL",
     "CEMZY": "SAT",
     "CGCAM": "SAT",
@@ -685,7 +630,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1702668,
+  "kap_son": 1702702,
   "tk_gonderilen": {
     "tarih": "2026-11-25",
     "kodlar": []
