@@ -7,7 +7,6 @@
     "CELHA",
     "EGEGY",
     "FRIGO",
-    "HKTM",
     "METRO",
     "PGSUS",
     "THYAO"
@@ -64,9 +63,10 @@
     "BIGTK": "SAT",
     "BIMAS": "SAT",
     "BINHO": "SAT",
-    "BIOEN": "SAT",
+    "BIOEN": "AL",
     "BJKAS": "SAT",
-    "BLUME": "SAT",
+    "BKRGY": "SAT",
+    "BLUME": "AL",
     "BMSTL": "SAT",
     "BOBET": "SAT",
     "BORLS": "SAT",
@@ -104,8 +104,8 @@
     "ECZYT": "SAT",
     "EDATA": "SAT",
     "EFOR": "SAT",
-    "EGEEN": "AL",
-    "EGEGY": "SAT",
+    "EGEEN": "SAT",
+    "EGEGY": "AL",
     "EGEPO": "SAT",
     "EGGUB": "AL",
     "EKDMR": "SAT",
@@ -267,8 +267,8 @@
     "RGYAS": "SAT",
     "RTALB": "SAT",
     "RUBNS": "SAT",
-    "RYGYO": "AL",
-    "RYSAS": "AL",
+    "RYGYO": "SAT",
+    "RYSAS": "SAT",
     "SAFKR": "SAT",
     "SAHOL": "SAT",
     "SANFM": "SAT",
@@ -323,7 +323,7 @@
     "ULUSE": "SAT",
     "ULUUN": "SAT",
     "USAK": "SAT",
-    "VAKBN": "AL",
+    "VAKBN": "SAT",
     "VAKFA": "SAT",
     "VBTYZ": "SAT",
     "VESBE": "SAT",
@@ -332,7 +332,7 @@
     "VSNMD": "SAT",
     "YEOTK": "SAT",
     "YIGIT": "SAT",
-    "YKBNK": "AL",
+    "YKBNK": "SAT",
     "ZERGY": "SAT",
     "ZGYO": "AL",
     "ZOREN": "SAT"
@@ -365,7 +365,48 @@
     "bf66dd174394122b"
   ],
   "alarm_tetik": [],
-  "on_sinyal": {},
+  "on_sinyal": {
+    "BIOEN": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-25"
+    },
+    "BLUME": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-25"
+    },
+    "EGEEN": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-11-25"
+    },
+    "EGEGY": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-25"
+    },
+    "RYGYO": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-11-25"
+    },
+    "RYSAS": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-11-25"
+    },
+    "VAKBN": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-11-25"
+    },
+    "YKBNK": {
+      "sinyal": "SAT",
+      "onceki": "AL",
+      "tarih": "2026-11-25"
+    }
+  },
   "uv_son": {
     "A1CAP": "SAT",
     "ADEL": "SAT",
@@ -629,7 +670,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1702550,
+  "kap_son": 1702568,
   "tk_gonderilen": {
     "tarih": "2026-11-25",
     "kodlar": []
