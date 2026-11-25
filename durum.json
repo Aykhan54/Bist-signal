@@ -1,17 +1,18 @@
 {
   "al": [
-    "AKSA",
     "BAHKM",
     "BIOEN",
+    "BLUME",
     "CATES",
     "CELHA",
+    "EGEGY",
     "ENERY",
     "FRIGO",
     "HKTM",
     "METRO",
     "ORZAX",
-    "PENTA",
     "PGSUS",
+    "SANFM",
     "SELEC",
     "THYAO",
     "ZGYO"
@@ -633,7 +634,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1702187,
+  "kap_son": 1702240,
   "tk_gonderilen": {
     "tarih": "2026-11-25",
     "kodlar": []
