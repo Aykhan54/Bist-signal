@@ -1,6 +1,7 @@
 {
   "al": [
     "AKSA",
+    "ARFYE",
     "BAHKM",
     "BIOEN",
     "BLUME",
@@ -10,7 +11,6 @@
     "HKTM",
     "METRO",
     "PGSUS",
-    "SELEC",
     "THYAO",
     "ZGYO"
   ],
@@ -631,7 +631,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1702280,
+  "kap_son": 1702327,
   "tk_gonderilen": {
     "tarih": "2026-11-25",
     "kodlar": []
