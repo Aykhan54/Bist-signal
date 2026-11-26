@@ -1,6 +1,7 @@
 {
   "al": [
     "AKSA",
+    "ARFYE",
     "BAHKM",
     "BIOEN",
     "CELHA",
@@ -9,7 +10,6 @@
     "FRIGO",
     "HKTM",
     "KCAER",
-    "PENTA",
     "PKART",
     "ZGYO"
   ],
@@ -46,7 +46,7 @@
     "ANSGR": "SAT",
     "ARCLK": "SAT",
     "ARDYZ": "SAT",
-    "ARFYE": "SAT",
+    "ARFYE": "AL",
     "ARMGD": "SAT",
     "ARSAN": "SAT",
     "ASELS": "SAT",
@@ -368,6 +368,11 @@
   ],
   "alarm_tetik": [],
   "on_sinyal": {
+    "ARFYE": {
+      "sinyal": "AL",
+      "onceki": "SAT",
+      "tarih": "2026-11-26"
+    },
     "CITAS": {
       "sinyal": "AL",
       "onceki": "SAT",
@@ -652,7 +657,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1703038,
+  "kap_son": 1703056,
   "tk_gonderilen": {
     "tarih": "2026-11-26",
     "kodlar": []
