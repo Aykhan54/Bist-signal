@@ -1,6 +1,7 @@
 {
   "al": [
     "AKSA",
+    "ARFYE",
     "BAHKM",
     "BIOEN",
     "BLUME",
@@ -9,8 +10,7 @@
     "METRO",
     "PENTA",
     "PGSUS",
-    "THYAO",
-    "ZGYO"
+    "THYAO"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -630,9 +630,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1702797,
+  "kap_son": 1702849,
   "tk_gonderilen": {
-    "tarih": "2026-11-25",
+    "tarih": "2026-11-26",
     "kodlar": []
   },
   "mom_ay": {
@@ -649,11 +649,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-11-25",
-    "g": [
-      "d500f8de6b1ca760",
-      "e639d938f0564690"
-    ]
+    "tarih": "2026-11-26",
+    "g": []
   },
-  "sabah_tarih": "2026-11-25"
+  "sabah_tarih": "2026-11-26"
 }
