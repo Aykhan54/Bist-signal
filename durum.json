@@ -13,7 +13,10 @@
     "FRIGO",
     "HKTM",
     "KCAER",
-    "PKART"
+    "METEN",
+    "MPARK",
+    "PKART",
+    "VEYAS"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -654,6 +657,7 @@
   "gunici": {
     "tarih": "2026-11-27",
     "g": [
+      "197ac8d11b85ed6e",
       "59559e0403e4cbe4"
     ]
   },
