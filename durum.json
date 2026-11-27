@@ -16,8 +16,7 @@
     "KCAER",
     "KLSER",
     "METEN",
-    "PKART",
-    "TGSAS"
+    "PKART"
   ],
   "son": {
     "A1CAP": "SAT",
@@ -637,7 +636,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1703274,
+  "kap_son": 1703302,
   "tk_gonderilen": {
     "tarih": "2026-11-27",
     "kodlar": []
