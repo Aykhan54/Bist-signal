@@ -14,7 +14,9 @@
     "FRIGO",
     "HKTM",
     "KCAER",
+    "KLSER",
     "METEN",
+    "PENTA",
     "PKART",
     "VEYAS"
   ],
@@ -636,7 +638,7 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1703339,
+  "kap_son": 1703349,
   "tk_gonderilen": {
     "tarih": "2026-11-27",
     "kodlar": []
