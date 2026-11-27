@@ -9,6 +9,7 @@
     "FRIGO",
     "HKTM",
     "KCAER",
+    "PENTA",
     "PKART",
     "ZGYO"
   ],
@@ -630,9 +631,9 @@
     "YKBNK": "SAT",
     "ZOREN": "SAT"
   },
-  "kap_son": 1703098,
+  "kap_son": 1703139,
   "tk_gonderilen": {
-    "tarih": "2026-11-26",
+    "tarih": "2026-11-27",
     "kodlar": []
   },
   "mom_ay": {
@@ -649,8 +650,8 @@
     ]
   },
   "gunici": {
-    "tarih": "2026-11-26",
+    "tarih": "2026-11-27",
     "g": []
   },
-  "sabah_tarih": "2026-11-26"
+  "sabah_tarih": "2026-11-27"
 }
